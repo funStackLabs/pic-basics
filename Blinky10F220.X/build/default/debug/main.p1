@@ -1,0 +1,291 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"464 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 464: extern volatile __control unsigned char TRIS __attribute__((address(0x006)));
+[v _TRIS `VWuc ~T0 @X0 0 e@6 ]
+"522
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 522: extern volatile __bit ANS0 __attribute__((address(0x3E)));
+[v _ANS0 `Vb ~T0 @X0 0 e@62 ]
+[v F36 `(v ~T0 @X0 1 tf1`ul ]
+"12 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/builtins.h
+[v __delay `JF36 ~T0 @X0 0 e ]
+[p i __delay ]
+"570 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 570: extern volatile __bit GP0 __attribute__((address(0x30)));
+[v _GP0 `Vb ~T0 @X0 0 e@48 ]
+"460
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 460: extern volatile __control unsigned char OPTION __attribute__((address(0x000)));
+[v _OPTION `VWuc ~T0 @X0 0 e@0 ]
+"73
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 73: extern volatile unsigned char TMR0 __attribute__((address(0x001)));
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"525
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 525: extern volatile __bit ANS1 __attribute__((address(0x3F)));
+[v _ANS1 `Vb ~T0 @X0 0 e@63 ]
+"495
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 495: extern volatile __bit ADON __attribute__((address(0x38)));
+[v _ADON `Vb ~T0 @X0 0 e@56 ]
+"555
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 555: extern volatile __bit CHS1 __attribute__((address(0x3B)));
+[v _CHS1 `Vb ~T0 @X0 0 e@59 ]
+"552
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 552: extern volatile __bit CHS0 __attribute__((address(0x3A)));
+[v _CHS0 `Vb ~T0 @X0 0 e@58 ]
+"390
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 390: extern volatile unsigned char ADRES __attribute__((address(0x008)));
+[v _ADRES `Vuc ~T0 @X0 0 e@8 ]
+"567
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 567: extern volatile __bit GO_nDONE __attribute__((address(0x39)));
+[v _GO_nDONE `Vb ~T0 @X0 0 e@57 ]
+[p mainexit ]
+"14 main.c
+[p x IOSCFS  =  8MHZ     ]
+"15
+[p x MCPU  =  OFF        ]
+"16
+[p x WDTE  =  ON         ]
+"17
+[p x CP  =  OFF          ]
+"18
+[p x MCLRE  =  OFF       ]
+"55 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 55: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"75
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 75: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"95
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 95: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"115
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 115: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"181
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 181: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"201
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 201: __asm("OSCCAL equ 05h");
+[; <" OSCCAL equ 05h ;# ">
+"272
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 272: __asm("GPIO equ 06h");
+[; <" GPIO equ 06h ;# ">
+"310
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 310: __asm("ADCON0 equ 07h");
+[; <" ADCON0 equ 07h ;# ">
+"392
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 392: __asm("ADRES equ 08h");
+[; <" ADRES equ 08h ;# ">
+"27 main.c
+[; ;main.c: 27: void beacon() {
+[v _beacon `(v ~T0 @X0 1 ef ]
+{
+[e :U _beacon ]
+[f ]
+"29
+[; ;main.c: 29:     TRIS = 0b11111110;
+[e = _TRIS -> -> 254 `i `uc ]
+"30
+[; ;main.c: 30:     ANS0 = 0;
+[e = _ANS0 -> -> 0 `i `b ]
+"32
+[; ;main.c: 32:     while(1){
+[e :U 26 ]
+{
+"33
+[; ;main.c: 33:         for(uint8_t i=0; i< 100 ; i++){
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 100 `i 28  ]
+[e $U 29  ]
+[e :U 28 ]
+{
+"34
+[; ;main.c: 34:             _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"35
+[; ;main.c: 35:             __asm("clrwdt");
+[; <" clrwdt ;# ">
+"36
+[; ;main.c: 36:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 100 `i 28  ]
+[e :U 29 ]
+}
+"37
+[; ;main.c: 37:         GP0 = 1;
+[e = _GP0 -> -> 1 `i `b ]
+"38
+[; ;main.c: 38:         _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"39
+[; ;main.c: 39:         __asm("clrwdt");
+[; <" clrwdt ;# ">
+"40
+[; ;main.c: 40:         GP0 = 0;
+[e = _GP0 -> -> 0 `i `b ]
+"41
+[; ;main.c: 41:     }
+}
+[e :U 25 ]
+[e $U 26  ]
+[e :U 27 ]
+"42
+[; ;main.c: 42: }
+[e :UE 24 ]
+}
+"45
+[; ;main.c: 45: void pulsatingGlow() {
+[v _pulsatingGlow `(v ~T0 @X0 1 ef ]
+{
+[e :U _pulsatingGlow ]
+[f ]
+"47
+[; ;main.c: 47:     TRIS = 0b11111110;
+[e = _TRIS -> -> 254 `i `uc ]
+"48
+[; ;main.c: 48:     ANS0 = 0;
+[e = _ANS0 -> -> 0 `i `b ]
+"51
+[; ;main.c: 51:     OPTION = 0b11010010;
+[e = _OPTION -> -> 210 `i `uc ]
+"53
+[; ;main.c: 53:     uint8_t duty = 0;
+[v _duty `uc ~T0 @X0 1 a ]
+[e = _duty -> -> 0 `i `uc ]
+"54
+[; ;main.c: 54:     int8_t dutyDelta = 1;
+[v _dutyDelta `c ~T0 @X0 1 a ]
+[e = _dutyDelta -> -> 1 `i `c ]
+"56
+[; ;main.c: 56:     uint8_t animationCounter = 0;
+[v _animationCounter `uc ~T0 @X0 1 a ]
+[e = _animationCounter -> -> 0 `i `uc ]
+"58
+[; ;main.c: 58:     while (1) {
+[e :U 33 ]
+{
+"60
+[; ;main.c: 60:         GP0 = TMR0 < duty;
+[e = _GP0 < -> _TMR0 `i -> _duty `i ]
+"62
+[; ;main.c: 62:         animationCounter++;
+[e ++ _animationCounter -> -> 1 `i `uc ]
+"63
+[; ;main.c: 63:         if (animationCounter == 220) {
+[e $ ! == -> _animationCounter `i -> 220 `i 35  ]
+{
+"64
+[; ;main.c: 64:             duty += dutyDelta;
+[e =+ _duty -> _dutyDelta `uc ]
+"65
+[; ;main.c: 65:             animationCounter = 0;
+[e = _animationCounter -> -> 0 `i `uc ]
+"66
+[; ;main.c: 66:         }
+}
+[e :U 35 ]
+"67
+[; ;main.c: 67:         if (duty == 0 || duty == 255) {
+[e $ ! || == -> _duty `i -> 0 `i == -> _duty `i -> 255 `i 36  ]
+{
+"68
+[; ;main.c: 68:             dutyDelta = -dutyDelta;
+[e = _dutyDelta -> -U -> _dutyDelta `i `c ]
+"69
+[; ;main.c: 69:             duty += dutyDelta;
+[e =+ _duty -> _dutyDelta `uc ]
+"70
+[; ;main.c: 70:         }
+}
+[e :U 36 ]
+"71
+[; ;main.c: 71:         __asm("clrwdt");
+[; <" clrwdt ;# ">
+"72
+[; ;main.c: 72:     }
+}
+[e :U 32 ]
+[e $U 33  ]
+[e :U 34 ]
+"73
+[; ;main.c: 73: }
+[e :UE 31 ]
+}
+"76
+[; ;main.c: 76: void potControl() {
+[v _potControl `(v ~T0 @X0 1 ef ]
+{
+[e :U _potControl ]
+[f ]
+"78
+[; ;main.c: 78:     TRIS = 0b11111110;
+[e = _TRIS -> -> 254 `i `uc ]
+"81
+[; ;main.c: 81:     ANS0 = 0;
+[e = _ANS0 -> -> 0 `i `b ]
+"82
+[; ;main.c: 82:     ANS1 = 1;
+[e = _ANS1 -> -> 1 `i `b ]
+"85
+[; ;main.c: 85:     ADON = 1;
+[e = _ADON -> -> 1 `i `b ]
+"86
+[; ;main.c: 86:     CHS1 = 0;
+[e = _CHS1 -> -> 0 `i `b ]
+"87
+[; ;main.c: 87:     CHS0 = 1;
+[e = _CHS0 -> -> 1 `i `b ]
+"90
+[; ;main.c: 90:     OPTION = 0b11010010;
+[e = _OPTION -> -> 210 `i `uc ]
+"92
+[; ;main.c: 92:     while (1) {
+[e :U 39 ]
+{
+"94
+[; ;main.c: 94:         GP0 = TMR0 < ADRES;
+[e = _GP0 < -> _TMR0 `i -> _ADRES `i ]
+"96
+[; ;main.c: 96:         GO_nDONE = 1;
+[e = _GO_nDONE -> -> 1 `i `b ]
+"98
+[; ;main.c: 98:         while (GO_nDONE) {
+[e $U 41  ]
+[e :U 42 ]
+{
+"99
+[; ;main.c: 99:         };
+}
+[e :U 41 ]
+"98
+[; ;main.c: 98:         while (GO_nDONE) {
+[e $ _GO_nDONE 42  ]
+[e :U 43 ]
+"100
+[; ;main.c: 100:         __asm("clrwdt");
+[; <" clrwdt ;# ">
+"101
+[; ;main.c: 101:     }
+}
+[e :U 38 ]
+[e $U 39  ]
+[e :U 40 ]
+"103
+[; ;main.c: 103: }
+[e :UE 37 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"105
+[; ;main.c: 105: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"108
+[; ;main.c: 108:     pulsatingGlow();
+[e ( _pulsatingGlow ..  ]
+"110
+[; ;main.c: 110: }
+[e :UE 44 ]
+}

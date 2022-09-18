@@ -1,0 +1,51 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC12 PICREGULAR PIC12COM ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 10F220 ]
+[d frameptr 0 ]
+"10 /opt/microchip/xc8/v2.36/pic/sources/c90/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.36/pic/sources/c90/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"47 /home/gorkemkinik/MPLABXProjects/Blinky10F220.X/main.c
+[v _pulsatingGlow pulsatingGlow `(v  1 e 1 0 ]
+"116
+[v _main main `(v  1 e 1 0 ]
+"73 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"390
+[v _ADRES ADRES `VEuc  1 e 1 @8 ]
+"460
+[v _OPTION OPTION `VEWuc  1 e 1 @0 ]
+"464
+[v _TRIS TRIS `VEWuc  1 e 1 @6 ]
+"495
+[v _ADON ADON `VEb  1 e 0 @56 ]
+"522
+[v _ANS0 ANS0 `VEb  1 e 0 @62 ]
+"525
+[v _ANS1 ANS1 `VEb  1 e 0 @63 ]
+"552
+[v _CHS0 CHS0 `VEb  1 e 0 @58 ]
+"555
+[v _CHS1 CHS1 `VEb  1 e 0 @59 ]
+"567
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @57 ]
+"570
+[v _GP0 GP0 `VEb  1 e 0 @48 ]
+"116 /home/gorkemkinik/MPLABXProjects/Blinky10F220.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"121
+} 0
+"47
+[v _pulsatingGlow pulsatingGlow `(v  1 e 1 0 ]
+{
+"55
+[v pulsatingGlow@duty duty `uc  1 a 1 2 ]
+"56
+[v pulsatingGlow@dutyDelta dutyDelta `c  1 a 1 1 ]
+"58
+[v pulsatingGlow@animationCounter animationCounter `uc  1 a 1 0 ]
+"83
+} 0

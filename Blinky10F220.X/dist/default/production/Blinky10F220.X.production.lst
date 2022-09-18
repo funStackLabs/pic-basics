@@ -1,0 +1,452 @@
+
+
+Microchip MPLAB XC8 Assembler V2.36 build 20220127204148 
+                                                                                               Mon Sep 19 06:30:26 2022
+
+Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1 
+     1                           	processor	10F220
+     2                           	pagewidth 120
+     3                           	opt	flic
+     4                           	psect	cinit,global,class=ENTRY,merge=1,delta=2
+     5                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1,noexec
+     6                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1,noexec
+     7                           	psect	maintext,global,class=CODE,split=1,delta=2
+     8                           	psect	text1,local,class=CODE,merge=1,delta=2
+     9                           	psect	jmp_tab,global,class=ENTRY,delta=2
+    10                           	psect	idloc,global,abs,ovrld,class=IDLOC,space=5,delta=2,noexec
+    11                           	psect	config,global,abs,ovrld,class=CONFIG,space=4,delta=2,noexec
+    12                           	dabs	1,0x1C,4
+    13  0000                     
+    14                           ; Version 2.40
+    15                           ; Generated 06/12/2021 GMT
+    16                           ; 
+    17                           ; Copyright © 2021, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    18                           ; All rights reserved.
+    19                           ; 
+    20                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    21                           ; 
+    22                           ; Redistribution and use in source and binary forms, with or without modification, are
+    23                           ; permitted provided that the following conditions are met:
+    24                           ; 
+    25                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    26                           ;        conditions and the following disclaimer.
+    27                           ; 
+    28                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    29                           ;        of conditions and the following disclaimer in the documentation and/or other
+    30                           ;        materials provided with the distribution. Publication is not required when
+    31                           ;        this file is used in an embedded application.
+    32                           ; 
+    33                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    34                           ;        software without specific prior written permission.
+    35                           ; 
+    36                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    37                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    38                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    39                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    40                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    41                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    42                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    43                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    44                           ; 
+    45                           ; 
+    46                           ; Code-generator required, PIC10F220 Definitions
+    47                           ; 
+    48                           ; SFR Addresses
+    49  0000                     	;# 
+    50  0001                     	;# 
+    51  0002                     	;# 
+    52  0003                     	;# 
+    53  0004                     	;# 
+    54  0005                     	;# 
+    55  0006                     	;# 
+    56  0007                     	;# 
+    57  0008                     	;# 
+    58  0008                     _ADRES	set	8
+    59  0001                     _TMR0	set	1
+    60  0000                     _OPTION	set	0
+    61  0006                     _TRIS	set	6
+    62  0039                     _GO_nDONE	set	57
+    63  003A                     _CHS0	set	58
+    64  003B                     _CHS1	set	59
+    65  0038                     _ADON	set	56
+    66  003F                     _ANS1	set	63
+    67  0030                     _GP0	set	48
+    68  003E                     _ANS0	set	62
+    69                           
+    70                           	psect	cinit
+    71  001                     start_initialization:	
+    72                           ; #config settings
+    73                           
+    74  001                     __initialization:
+    75  001                     end_of_initialization:	
+    76                           ;End of C runtime variable initialization code
+    77                           
+    78  001                     __end_of__initialization:
+    79  001  0064               	clrf	4
+    80  002  0A36               	ljmp	_main	;jump to C main() function
+    81                           
+    82                           	psect	cstackCOMMON
+    83  000                     __pcstackCOMMON:
+    84  000                     ??_pulsatingGlow:
+    85  000                     ??_main:	
+    86                           ; 1 bytes @ 0x0
+    87                           
+    88                           
+    89                           	psect	cstackBANK0
+    90  010                     __pcstackBANK0:	
+    91                           ; 1 bytes @ 0x0
+    92                           
+    93  010                     ?_pulsatingGlow:
+    94  010                     ?_main:	
+    95                           ; 1 bytes @ 0x0
+    96                           
+    97  010                     pulsatingGlow@animationCounter:	
+    98                           ; 1 bytes @ 0x0
+    99                           
+   100                           
+   101                           ; 1 bytes @ 0x0
+   102  010                     	ds	1
+   103  011                     pulsatingGlow@dutyDelta:
+   104                           
+   105                           ; 1 bytes @ 0x1
+   106  011                     	ds	1
+   107  012                     pulsatingGlow@duty:
+   108                           
+   109                           ; 1 bytes @ 0x2
+   110  012                     	ds	1
+   111                           
+   112                           	psect	maintext
+   113  036                     __pmaintext:	
+   114 ;;
+   115 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   116 ;;
+   117 ;; *************** function _main *****************
+   118 ;; Defined at:
+   119 ;;		line 116 in file "main.c"
+   120 ;; Parameters:    Size  Location     Type
+   121 ;;		None
+   122 ;; Auto vars:     Size  Location     Type
+   123 ;;		None
+   124 ;; Return value:  Size  Location     Type
+   125 ;;                  1   55[None  ] void 
+   126 ;; Registers used:
+   127 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+3, pclath, cstack
+   128 ;; Tracked objects:
+   129 ;;		On entry : B00/0
+   130 ;;		On exit  : 0/0
+   131 ;;		Unchanged: 0/0
+   132 ;; Data sizes:     COMMON   BANK0
+   133 ;;      Params:         0       0
+   134 ;;      Locals:         0       0
+   135 ;;      Temps:          0       0
+   136 ;;      Totals:         0       0
+   137 ;;Total ram usage:        0 bytes
+   138 ;; Hardware stack levels required when called: 1
+   139 ;; This function calls:
+   140 ;;		_pulsatingGlow
+   141 ;; This function is called by:
+   142 ;;		Startup code after reset
+   143 ;; This function uses a non-reentrant model
+   144 ;;
+   145                           
+   146  036                     _main:	
+   147                           ;psect for function _main
+   148                           
+   149  036                     l666:	
+   150                           ;incstack = 0
+   151                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+3+pclath+cstack]
+   152                           
+   153                           
+   154                           ;main.c: 119:     pulsatingGlow();
+   155  036  09FE               	fcall	entry__pulsatingGlow
+   156  037                     l56:
+   157  037  0A00               	ljmp	start
+   158  038                     __end_of_main:
+   159                           
+   160                           	psect	text1
+   161  003                     __ptext1:	
+   162 ;; *************** function _pulsatingGlow *****************
+   163 ;; Defined at:
+   164 ;;		line 47 in file "main.c"
+   165 ;; Parameters:    Size  Location     Type
+   166 ;;		None
+   167 ;; Auto vars:     Size  Location     Type
+   168 ;;  duty            1    2[BANK0 ] unsigned char 
+   169 ;;  dutyDelta       1    1[BANK0 ] char 
+   170 ;;  animationCou    1    0[BANK0 ] unsigned char 
+   171 ;; Return value:  Size  Location     Type
+   172 ;;                  1   34[None  ] void 
+   173 ;; Registers used:
+   174 ;;		wreg, fsr0l, fsr0h, status,2, status,0, btemp+3
+   175 ;; Tracked objects:
+   176 ;;		On entry : 0/0
+   177 ;;		On exit  : 0/0
+   178 ;;		Unchanged: 0/0
+   179 ;; Data sizes:     COMMON   BANK0
+   180 ;;      Params:         0       0
+   181 ;;      Locals:         0       3
+   182 ;;      Temps:          0       0
+   183 ;;      Totals:         0       3
+   184 ;;Total ram usage:        3 bytes
+   185 ;; Hardware stack levels used: 1
+   186 ;; This function calls:
+   187 ;;		Nothing
+   188 ;; This function is called by:
+   189 ;;		_main
+   190 ;; This function uses a non-reentrant model
+   191 ;;
+   192                           
+   193  003                     _pulsatingGlow:	
+   194                           ;psect for function _pulsatingGlow
+   195                           
+   196  003                     l638:
+   197                           
+   198                           ;main.c: 49:     TRIS = 0b11111110;
+   199  003  0CFE               	movlw	254
+   200  004  0006               	tris	6
+   201  005                     l640:
+   202                           
+   203                           ;main.c: 50:     ANS0 = 0;
+   204  005  04C7               	bcf	7,6	;volatile
+   205  006                     l642:
+   206                           
+   207                           ;main.c: 53:     OPTION = 0b11010010;
+   208  006  0CD2               	movlw	210
+   209  007  0002               	option
+   210  008                     l644:
+   211                           
+   212                           ;main.c: 55:     uint8_t duty = 0;
+   213  008  0072               	clrf	pulsatingGlow@duty
+   214  009                     l646:
+   215                           
+   216                           ;main.c: 56:     int8_t dutyDelta = 1;
+   217  009  0071               	clrf	pulsatingGlow@dutyDelta
+   218  00A  02B1               	incf	pulsatingGlow@dutyDelta,f
+   219                           
+   220                           ;main.c: 58:     uint8_t animationCounter = 0;
+   221  00B  0070               	clrf	pulsatingGlow@animationCounter
+   222  00C                     l648:
+   223                           
+   224                           ;main.c: 68:         GP0 = TMR0 < duty;
+   225  00C  0212               	movf	pulsatingGlow@duty,w
+   226  00D  0081               	subwf	1,w	;volatile
+   227  00E  0703               	skipc
+   228  00F  0A11               	goto	u101
+   229  010  0A13               	goto	u100
+   230  011                     u101:
+   231  011  0506               	bsf	6,0	;volatile
+   232  012  0A14               	goto	u114
+   233  013                     u100:
+   234  013  0406               	bcf	6,0	;volatile
+   235  014                     u114:
+   236  014                     l650:
+   237                           
+   238                           ;main.c: 70:         animationCounter++;
+   239  014  0C01               	movlw	1
+   240  015  003F               	movwf	btemp+3
+   241  016  021F               	movf	btemp+3,w
+   242  017  01F0               	addwf	pulsatingGlow@animationCounter,f
+   243  018                     l652:
+   244                           
+   245                           ;main.c: 72:         if (animationCounter == 220) {
+   246  018  0CDC               	movlw	220
+   247  019  0190               	xorwf	pulsatingGlow@animationCounter,w
+   248  01A  0743               	btfss	3,2
+   249  01B  0A1D               	goto	u121
+   250  01C  0A1E               	goto	u120
+   251  01D                     u121:
+   252  01D  0A23               	goto	l658
+   253  01E                     u120:
+   254  01E                     l654:
+   255                           
+   256                           ;main.c: 73:             duty += dutyDelta;
+   257  01E  0211               	movf	pulsatingGlow@dutyDelta,w
+   258  01F  003F               	movwf	btemp+3
+   259  020  021F               	movf	btemp+3,w
+   260  021  01F2               	addwf	pulsatingGlow@duty,f
+   261  022                     l656:
+   262                           
+   263                           ;main.c: 74:             animationCounter = 0;
+   264  022  0070               	clrf	pulsatingGlow@animationCounter
+   265  023                     l658:
+   266                           
+   267                           ;main.c: 77:         if (duty == 0 || duty == 255) {
+   268  023  0212               	movf	pulsatingGlow@duty,w
+   269  024  0643               	btfsc	3,2
+   270  025  0A27               	goto	u131
+   271  026  0A28               	goto	u130
+   272  027                     u131:
+   273  027  0A2D               	goto	l662
+   274  028                     u130:
+   275  028                     l660:
+   276  028  0292               	incf	pulsatingGlow@duty,w
+   277  029  0743               	btfss	3,2
+   278  02A  0A2C               	goto	u141
+   279  02B  0A2D               	goto	u140
+   280  02C                     u141:
+   281  02C  0A33               	goto	l37
+   282  02D                     u140:
+   283  02D                     l662:
+   284                           
+   285                           ;main.c: 78:             dutyDelta = -dutyDelta;
+   286  02D  0271               	comf	pulsatingGlow@dutyDelta,f
+   287  02E  02B1               	incf	pulsatingGlow@dutyDelta,f
+   288  02F                     l664:
+   289                           
+   290                           ;main.c: 79:             duty += dutyDelta;
+   291  02F  0211               	movf	pulsatingGlow@dutyDelta,w
+   292  030  003F               	movwf	btemp+3
+   293  031  021F               	movf	btemp+3,w
+   294  032  01F2               	addwf	pulsatingGlow@duty,f
+   295  033                     l37:	
+   296                           ;main.c: 80:         }
+   297                           
+   298  033  0004               	clrwdt	;# 
+   299  034  0A0C               	goto	l648
+   300  035  0800               	retlw	0
+   301  036                     __end_of_pulsatingGlow:
+   302  001C                     btemp	set	28	;btemp
+   303  001C                     wtemp0	set	28
+   304  001E                     wtemp1	set	30
+   305  001C                     ttemp0	set	28
+   306  001C                     ltemp0	set	28
+   307                           
+   308                           	psect	jmp_tab
+   309  0FE                     __pjmp_tab:	
+   310                           ;incstack = 0
+   311                           ; Regs used in _pulsatingGlow: [wreg-fsr0h+status,2+status,0+btemp+3]
+   312                           
+   313  0FE                     entry__pulsatingGlow:
+   314  0FE  0A03               	ljmp	_pulsatingGlow
+   315                           
+   316                           	psect	idloc
+   317                           
+   318                           ;Config register IDLOC0 @ 0x100
+   319                           ;	unspecified, using default values
+   320  0100                     	org	256
+   321  0100  0FFF               	dw	4095
+   322                           
+   323                           ;Config register IDLOC1 @ 0x101
+   324                           ;	unspecified, using default values
+   325  0101                     	org	257
+   326  0101  0FFF               	dw	4095
+   327                           
+   328                           ;Config register IDLOC2 @ 0x102
+   329                           ;	unspecified, using default values
+   330  0102                     	org	258
+   331  0102  0FFF               	dw	4095
+   332                           
+   333                           ;Config register IDLOC3 @ 0x103
+   334                           ;	unspecified, using default values
+   335  0103                     	org	259
+   336  0103  0FFF               	dw	4095
+   337                           
+   338                           	psect	config
+   339                           
+   340                           ;Config register CONFIG @ 0xFFF
+   341                           ;	Internal Oscillator Frequency Select bit
+   342                           ;	IOSCFS = 8MHZ, 8 MHz
+   343                           ;	Master Clear Pull-up Enable bit
+   344                           ;	MCPU = OFF, Pull-up disabled
+   345                           ;	Watchdog Timer Enable bit
+   346                           ;	WDTE = ON, WDT enabled
+   347                           ;	Code protection bit
+   348                           ;	CP = OFF, Code protection off
+   349                           ;	GP3/MCLR Pin Function Select bit
+   350                           ;	MCLRE = OFF, GP3/MCLR pin function is digital I/O, MCLR internally tied to VDD
+   351  0FFF                     	org	4095
+   352  0FFF  0FEF               	dw	4079
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON            0      0       0
+    BANK0            14      3       3
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    _main->_pulsatingGlow
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0     162
+                      _pulsatingGlow
+ ---------------------------------------------------------------------------------
+ (1) _pulsatingGlow                                        3     3      0     162
+                                              0 BANK0      3     3      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 1
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _pulsatingGlow
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMMON            0      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+COMMON               0      0       0       1        0.0%
+STACK                0      0       0       2        0.0%
+BANK0                E      3       3       3       21.4%
+ABS                  0      0       0       4        0.0%
+DATA                 0      0       0       5        0.0%
+BITBANK0             E      0       0       6        0.0%
+
+
+Microchip Technology PIC Macro Assembler V2.36 build 20220127204148 
+Symbol Table                                                                                   Mon Sep 19 06:30:26 2022
+
+                           l37 0033                             l56 0037                             fsr 0004  
+                          l640 0005                            l650 0014                            l642 0006  
+                          l660 0028                            l652 0018                            l644 0008  
+                          l662 002D                            l654 001E                            l646 0009  
+                          l638 0003                            l664 002F                            l656 0022  
+                          l648 000C                            l658 0023                            l666 0036  
+                          _GP0 0030                            u100 0013                            u101 0011  
+                          u120 001E                            u121 001D                            u130 0028  
+                          u114 0014                            u131 0027                            u140 002D  
+                          u141 002C                           _ADON 0038                           _CHS0 003A  
+                         _CHS1 003B                           _ANS0 003E                           _ANS1 003F  
+                         _TMR0 0001                           _TRIS 0006                           _main 0036  
+                         btemp 001C                           start 0000                          ?_main 0010  
+                        _ADRES 0008                  _pulsatingGlow 0003              pulsatingGlow@duty 0012  
+                        ltemp0 001C                          ttemp0 001C                          status 0003  
+                        wtemp0 001C                          wtemp1 001E                __initialization 0001  
+                 __end_of_main 0038                 ?_pulsatingGlow 0010                         ??_main 0000  
+                       _OPTION 0000            entry__pulsatingGlow 00FE        __end_of__initialization 0001  
+               __pcstackCOMMON 0000                ??_pulsatingGlow 0000                     __pmaintext 0036  
+pulsatingGlow@animationCounter 0010                        __ptext1 0003           end_of_initialization 0001  
+       pulsatingGlow@dutyDelta 0011            start_initialization 0001          __end_of_pulsatingGlow 0036  
+                    ___latbits 0000                  __pcstackBANK0 0010                      __pjmp_tab 00FE  
+                     _GO_nDONE 0039  
