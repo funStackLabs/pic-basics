@@ -1,0 +1,637 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K20 ]
+[d frameptr 4065 ]
+"72 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+[e E355 . `uc
+SPI_DEFAULT 0
+]
+"50 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/main.c
+[e E3032 . `uc
+SPI_DEFAULT 0
+]
+"26 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/tftst.h
+[v _tftstWriteCommand tftstWriteCommand `(v  1 s 1 tftstWriteCommand ]
+"35
+[v _tftstWriteData tftstWriteData `(v  1 s 1 tftstWriteData ]
+"39
+[v _tftstReadId tftstReadId `(uc  1 e 1 0 ]
+"60
+[v _tftstSetWindow tftstSetWindow `(v  1 e 1 0 ]
+"74
+[v _tftstWriteColor tftstWriteColor `(v  1 e 1 0 ]
+"79
+[v _tftstFillScreen tftstFillScreen `(v  1 e 1 0 ]
+"87
+[v _tftstDrawPixel tftstDrawPixel `(v  1 e 1 0 ]
+"92
+[v _tftstDrawHorizontalLine tftstDrawHorizontalLine `(v  1 e 1 0 ]
+"100
+[v _tftstDrawVerticalLine tftstDrawVerticalLine `(v  1 e 1 0 ]
+"108
+[v _tftstFillRect tftstFillRect `(v  1 e 1 0 ]
+"124
+[v _tftstDrawChar tftstDrawChar `(v  1 e 1 0 ]
+"149
+[v _tftstDrawText tftstDrawText `(v  1 e 1 0 ]
+"177
+[v _tftstInit tftstInit `(v  1 e 1 0 ]
+"280
+[v _write_command write_command `(v  1 e 1 0 ]
+"289
+[v _write_data write_data `(v  1 e 1 0 ]
+"293
+[v _Rcmd1 Rcmd1 `(v  1 e 1 0 ]
+"339
+[v _Rcmd2red Rcmd2red `(v  1 e 1 0 ]
+"352
+[v _Rcmd3 Rcmd3 `(v  1 e 1 0 ]
+"1 /opt/microchip/xc8/v2.36/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"9 /opt/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 /opt/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"72 /opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.36/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v2.36/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v2.36/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v2.36/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v2.36/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /opt/microchip/xc8/v2.36/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.36/pic/sources/c99/common/putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 /opt/microchip/xc8/v2.36/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v2.36/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.36/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 /opt/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v2.36/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.36/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"48 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/main.c
+[v _demo demo `(v  1 e 1 0 ]
+"81
+[v _main main `(v  1 e 1 0 ]
+"50 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"59
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"55 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+"72
+[v _SPI_Open SPI_Open `(a  1 e 1 0 ]
+"92
+[v _SPI_ExchangeByte SPI_ExchangeByte `(uc  1 e 1 0 ]
+"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"6 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/tftst_fonts.h
+[v _Font Font `C[255]uc  1 e 255 0 ]
+"59
+[v _Font2 Font2 `C[220]uc  1 e 220 0 ]
+"346 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f45k20.h
+[v _WPUB WPUB `VEuc  1 e 1 @3964 ]
+"447
+[v _ANSEL ANSEL `VEuc  1 e 1 @3966 ]
+"509
+[v _ANSELH ANSELH `VEuc  1 e 1 @3967 ]
+"1533
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"1645
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1757
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"1869
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S377 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"1896
+[s S386 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S395 . 1 `S377 1 . 1 0 `S386 1 . 1 0 ]
+[v _LATDbits LATDbits `VES395  1 e 1 @3980 ]
+"1981
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"2033
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"2255
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"2477
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S167 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"2509
+[s S176 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S185 . 1 `S167 1 . 1 0 `S176 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES185  1 e 1 @3988 ]
+"2699
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2921
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"3073
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S237 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"3242
+[s S246 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S250 . 1 `S237 1 . 1 0 `S246 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES250  1 e 1 @3998 ]
+"5316
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+"5378
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S207 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"5398
+[s S213 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S218 . 1 `S207 1 . 1 0 `S213 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES218  1 e 1 @4038 ]
+"5448
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+"5673
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"5680
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"5687
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+[s S335 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"5708
+[s S339 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S347 . 1 `S335 1 . 1 0 `S339 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES347  1 e 1 @4042 ]
+"5758
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"5868
+[v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
+"6430
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S57 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"6973
+[s S60 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S69 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S72 . 1 `S57 1 . 1 0 `S60 1 . 1 0 `S69 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES72  1 e 1 @4081 ]
+[s S92 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"7050
+[s S101 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S110 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S114 . 1 `S92 1 . 1 0 `S101 1 . 1 0 `S110 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES114  1 e 1 @4082 ]
+"55 /opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+[s S159 . 4 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 `uc 1 operation 1 3 ]
+"58 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+[v _spi_configuration spi_configuration `C[1]S159  1 s 4 spi_configuration ]
+"81 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"101
+} 0
+"48
+[v _demo demo `(v  1 e 1 0 ]
+{
+"68
+[v demo@idString idString `[8]uc  1 a 8 13 ]
+"67
+[v demo@id id `uc  1 a 1 21 ]
+"56
+[v demo@y y `uc  1 a 1 23 ]
+"57
+[v demo@deltaY deltaY `c  1 a 1 22 ]
+"76
+} 0
+"39 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/tftst.h
+[v _tftstReadId tftstReadId `(uc  1 e 1 0 ]
+{
+"44
+[v tftstReadId@id1 id1 `uc  1 a 1 2 ]
+"47
+} 0
+"177
+[v _tftstInit tftstInit `(v  1 e 1 0 ]
+{
+"278
+} 0
+"79
+[v _tftstFillScreen tftstFillScreen `(v  1 e 1 0 ]
+{
+"80
+[v tftstFillScreen@counter counter `us  1 a 2 8 ]
+"79
+[v tftstFillScreen@color color `us  1 p 2 6 ]
+"85
+} 0
+"149
+[v _tftstDrawText tftstDrawText `(v  1 e 1 0 ]
+{
+[v tftstDrawText@x x `uc  1 a 1 wreg ]
+"151
+[v tftstDrawText@i i `us  1 a 2 46 ]
+[v tftstDrawText@textsize textsize `us  1 a 2 43 ]
+"150
+[v tftstDrawText@cursor_x cursor_x `uc  1 a 1 49 ]
+[v tftstDrawText@cursor_y cursor_y `uc  1 a 1 48 ]
+"149
+[v tftstDrawText@x x `uc  1 a 1 wreg ]
+[v tftstDrawText@y y `uc  1 p 1 33 ]
+[v tftstDrawText@_text _text `*.35uc  1 p 2 34 ]
+[v tftstDrawText@color color `us  1 p 2 36 ]
+[v tftstDrawText@bg bg `us  1 p 2 38 ]
+[v tftstDrawText@size size `uc  1 p 1 40 ]
+"152
+[v tftstDrawText@x x `uc  1 a 1 45 ]
+"167
+} 0
+"124
+[v _tftstDrawChar tftstDrawChar `(v  1 e 1 0 ]
+{
+[v tftstDrawChar@x x `uc  1 a 1 wreg ]
+"132
+[v tftstDrawChar@line line `uc  1 a 1 29 ]
+"125
+[v tftstDrawChar@i i `c  1 a 1 32 ]
+[v tftstDrawChar@j j `c  1 a 1 31 ]
+"124
+[v tftstDrawChar@x x `uc  1 a 1 wreg ]
+[v tftstDrawChar@y y `uc  1 p 1 16 ]
+[v tftstDrawChar@c c `uc  1 p 1 17 ]
+[v tftstDrawChar@color color `us  1 p 2 18 ]
+[v tftstDrawChar@bg bg `us  1 p 2 20 ]
+[v tftstDrawChar@size size `uc  1 p 1 22 ]
+"126
+[v tftstDrawChar@x x `uc  1 a 1 30 ]
+"147
+} 0
+"108
+[v _tftstFillRect tftstFillRect `(v  1 e 1 0 ]
+{
+[v tftstFillRect@x x `uc  1 a 1 wreg ]
+"111
+[v tftstFillRect@j j `uc  1 a 1 14 ]
+"110
+[v tftstFillRect@i i `uc  1 a 1 13 ]
+"108
+[v tftstFillRect@x x `uc  1 a 1 wreg ]
+[v tftstFillRect@y y `uc  1 p 1 6 ]
+[v tftstFillRect@w w `uc  1 p 1 7 ]
+[v tftstFillRect@h h `uc  1 p 1 8 ]
+[v tftstFillRect@color color `us  1 p 2 9 ]
+[v tftstFillRect@x x `uc  1 a 1 15 ]
+"115
+} 0
+"87
+[v _tftstDrawPixel tftstDrawPixel `(v  1 e 1 0 ]
+{
+[v tftstDrawPixel@x x `uc  1 a 1 wreg ]
+[v tftstDrawPixel@x x `uc  1 a 1 wreg ]
+[v tftstDrawPixel@y y `uc  1 p 1 6 ]
+[v tftstDrawPixel@color color `us  1 p 2 7 ]
+[v tftstDrawPixel@x x `uc  1 a 1 9 ]
+"90
+} 0
+"92
+[v _tftstDrawHorizontalLine tftstDrawHorizontalLine `(v  1 e 1 0 ]
+{
+[v tftstDrawHorizontalLine@x x `uc  1 a 1 wreg ]
+"94
+[v tftstDrawHorizontalLine@w w `uc  1 a 1 10 ]
+"92
+[v tftstDrawHorizontalLine@x x `uc  1 a 1 wreg ]
+[v tftstDrawHorizontalLine@y y `uc  1 p 1 6 ]
+[v tftstDrawHorizontalLine@width width `uc  1 p 1 7 ]
+[v tftstDrawHorizontalLine@color color `us  1 p 2 8 ]
+[v tftstDrawHorizontalLine@x x `uc  1 a 1 11 ]
+"98
+} 0
+"74
+[v _tftstWriteColor tftstWriteColor `(v  1 e 1 0 ]
+{
+[v tftstWriteColor@color color `us  1 p 2 2 ]
+"77
+} 0
+"60
+[v _tftstSetWindow tftstSetWindow `(v  1 e 1 0 ]
+{
+[v tftstSetWindow@xStart xStart `uc  1 a 1 wreg ]
+[v tftstSetWindow@xStart xStart `uc  1 a 1 wreg ]
+[v tftstSetWindow@xEnd xEnd `uc  1 p 1 2 ]
+[v tftstSetWindow@yStart yStart `uc  1 p 1 3 ]
+[v tftstSetWindow@yEnd yEnd `uc  1 p 1 4 ]
+[v tftstSetWindow@xStart xStart `uc  1 a 1 5 ]
+"72
+} 0
+"35
+[v _tftstWriteData tftstWriteData `(v  1 s 1 tftstWriteData ]
+{
+[v tftstWriteData@data_ data_ `uc  1 a 1 wreg ]
+[v tftstWriteData@data_ data_ `uc  1 a 1 wreg ]
+[v tftstWriteData@data_ data_ `uc  1 a 1 1 ]
+"37
+} 0
+"26
+[v _tftstWriteCommand tftstWriteCommand `(v  1 s 1 tftstWriteCommand ]
+{
+[v tftstWriteCommand@cmd_ cmd_ `uc  1 a 1 wreg ]
+[v tftstWriteCommand@cmd_ cmd_ `uc  1 a 1 wreg ]
+[v tftstWriteCommand@cmd_ cmd_ `uc  1 a 1 1 ]
+"33
+} 0
+"92 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+[v _SPI_ExchangeByte SPI_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI_ExchangeByte@data data `uc  1 a 1 wreg ]
+"94
+[v SPI_ExchangeByte@data data `uc  1 a 1 0 ]
+"98
+} 0
+"9 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S1024 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+"13
+[s S1027 _IO_FILE 11 `S1024 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S1027  1 a 11 2 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 0 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 87 ]
+[v sprintf@fmt fmt `*.25Cuc  1 p 2 89 ]
+"23
+} 0
+"1390 /opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 85 ]
+[s S1059 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S1059  1 p 2 79 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 81 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 83 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 71 ]
+[s S1059 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S1059  1 p 2 63 ]
+[v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 65 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 67 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"290
+[v dtoa@n n `o  1 a 8 53 ]
+"289
+[v dtoa@i i `i  1 a 2 61 ]
+[v dtoa@s s `i  1 a 2 51 ]
+[v dtoa@w w `i  1 a 2 49 ]
+[v dtoa@p p `i  1 a 2 47 ]
+[s S1059 _IO_FILE 0 ]
+"287
+[v dtoa@fp fp `*.39S1059  1 p 2 27 ]
+[v dtoa@d d `o  1 p 8 29 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 25 ]
+[v pad@i i `i  1 a 2 23 ]
+[s S1059 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S1059  1 p 2 16 ]
+[v pad@buf buf `*.39uc  1 p 2 18 ]
+[v pad@p p `i  1 p 2 20 ]
+"95
+} 0
+"5 /opt/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.35Cuc  1 a 2 2 ]
+"5
+[v strlen@s s `*.35Cuc  1 p 2 0 ]
+"12
+} 0
+"8 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 14 ]
+"10
+[v fputs@c c `uc  1 a 1 13 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 9 ]
+[u S1024 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1027 _IO_FILE 11 `S1024 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S1027  1 p 2 11 ]
+"19
+} 0
+"8 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S1024 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1027 _IO_FILE 11 `S1024 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S1027  1 p 2 2 ]
+"24
+} 0
+"7 /opt/microchip/xc8/v2.36/pic/sources/c99/common/putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 /opt/microchip/xc8/v2.36/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 18 ]
+"4
+} 0
+"9 /opt/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 17 ]
+[v ___aomod@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 0 ]
+[v ___aomod@divisor divisor `o  1 p 8 8 ]
+"36
+} 0
+"9 /opt/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 18 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 17 ]
+[v ___aodiv@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 0 ]
+[v ___aodiv@divisor divisor `o  1 p 8 8 ]
+"43
+} 0
+"72 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+[v _SPI_Open SPI_Open `(a  1 e 1 0 ]
+{
+[v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E355  1 a 1 wreg ]
+"74
+[v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E355  1 a 1 1 ]
+"85
+} 0
+"50 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"57
+} 0
+"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"55 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"59 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"65
+} 0
