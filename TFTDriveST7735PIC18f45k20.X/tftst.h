@@ -66,7 +66,7 @@ void tftstSetWindow(uint8_t xStart, uint8_t xEnd, uint8_t yStart, uint8_t yEnd) 
 
 void tftstWriteColor(uint16_t color) {
     tftstWriteData(color >> 8);
-    tftstWriteData(color & 0xFF | 0x80);
+    tftstWriteData(color & 0xFF);
 }
 
 void tftstFillScreen(uint16_t color) {
