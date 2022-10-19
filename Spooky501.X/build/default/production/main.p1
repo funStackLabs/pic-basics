@@ -1,0 +1,136 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"460 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 460: extern volatile __control unsigned char OPTION __attribute__((address(0x000)));
+[v _OPTION `VWuc ~T0 @X0 0 e@0 ]
+"468
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 468: extern volatile __control unsigned char TRISGPIO __attribute__((address(0x006)));
+[v _TRISGPIO `VWuc ~T0 @X0 0 e@6 ]
+"579
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 579: extern volatile __bit GP3 __attribute__((address(0x33)));
+[v _GP3 `Vb ~T0 @X0 0 e@51 ]
+"576
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 576: extern volatile __bit GP2 __attribute__((address(0x32)));
+[v _GP2 `Vb ~T0 @X0 0 e@50 ]
+"73
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 73: extern volatile unsigned char TMR0 __attribute__((address(0x001)));
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"14 main.c
+[p x IOSCFS  =  8MHZ     ]
+"15
+[p x MCPU  =  OFF        ]
+"16
+[p x WDTE  =  ON         ]
+"17
+[p x CP  =  OFF          ]
+"18
+[p x MCLRE  =  OFF       ]
+"55 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 55: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"75
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 75: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"95
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 95: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"115
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 115: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"181
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 181: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"201
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 201: __asm("OSCCAL equ 05h");
+[; <" OSCCAL equ 05h ;# ">
+"272
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 272: __asm("GPIO equ 06h");
+[; <" GPIO equ 06h ;# ">
+"310
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 310: __asm("ADCON0 equ 07h");
+[; <" ADCON0 equ 07h ;# ">
+"392
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 392: __asm("ADRES equ 08h");
+[; <" ADRES equ 08h ;# ">
+[v $root$_main `(v ~T0 @X0 0 e ]
+"28 main.c
+[; ;main.c: 28: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"32
+[; ;main.c: 32:     OPTION = 0b11010010;
+[e = _OPTION -> -> 210 `i `uc ]
+"33
+[; ;main.c: 33:     TRISGPIO = 0b11111011;
+[e = _TRISGPIO -> -> 251 `i `uc ]
+"35
+[; ;main.c: 35:     int16_t duty = 0;
+[v _duty `i ~T0 @X0 1 a ]
+[e = _duty -> 0 `i ]
+"36
+[; ;main.c: 36:     int8_t dutyDelta = 1;
+[v _dutyDelta `c ~T0 @X0 1 a ]
+[e = _dutyDelta -> -> 1 `i `c ]
+"37
+[; ;main.c: 37:     uint8_t animationCounter = 0;
+[v _animationCounter `uc ~T0 @X0 1 a ]
+[e = _animationCounter -> -> 0 `i `uc ]
+"38
+[; ;main.c: 38:     while (1) {
+[e :U 26 ]
+{
+"40
+[; ;main.c: 40:         if (GP3 == 0 && duty == 50) {
+[e $ ! && == -> _GP3 `i -> 0 `i == _duty -> 50 `i 28  ]
+{
+"41
+[; ;main.c: 41:             GP2 = 1;
+[e = _GP2 -> -> 1 `i `b ]
+"42
+[; ;main.c: 42:             __asm("sleep");
+[; <" sleep ;# ">
+"43
+[; ;main.c: 43:         }
+}
+[e :U 28 ]
+"45
+[; ;main.c: 45:         GP2 = TMR0 > duty;
+[e = _GP2 > -> _TMR0 `i _duty ]
+"46
+[; ;main.c: 46:         animationCounter += 4;
+[e =+ _animationCounter -> -> 4 `i `uc ]
+"47
+[; ;main.c: 47:         duty += animationCounter == 0 ? dutyDelta : 0;
+[e =+ _duty ? == -> _animationCounter `i -> 0 `i : -> _dutyDelta `i -> 0 `i ]
+"48
+[; ;main.c: 48:         if (duty < 50 || duty > 300) {
+[e $ ! || < _duty -> 50 `i > _duty -> 300 `i 29  ]
+{
+"49
+[; ;main.c: 49:             dutyDelta = -dutyDelta;
+[e = _dutyDelta -> -U -> _dutyDelta `i `c ]
+"50
+[; ;main.c: 50:             duty = duty < 50 ? 50 : 300;
+[e = _duty ? < _duty -> 50 `i : -> 50 `i -> 300 `i ]
+"51
+[; ;main.c: 51:         }
+}
+[e :U 29 ]
+"53
+[; ;main.c: 53:         __asm("clrwdt");
+[; <" clrwdt ;# ">
+"54
+[; ;main.c: 54:     }
+}
+[e :U 25 ]
+[e $U 26  ]
+[e :U 27 ]
+"55
+[; ;main.c: 55:     return;
+[e $UE 24  ]
+"56
+[; ;main.c: 56: }
+[e :UE 24 ]
+}
