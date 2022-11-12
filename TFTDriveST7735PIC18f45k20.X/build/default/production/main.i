@@ -5278,6 +5278,21 @@ const char Font2[] = {
     0x00, 0x41, 0x36, 0x08, 0x00,
     0x02, 0x01, 0x02, 0x04, 0x02
 };
+
+const char FWidths[255];
+const char FHeights[255];
+
+
+const uint8_t c1[500];
+const uint8_t c2[500];
+const uint8_t c3[500];
+const uint8_t c4[500];
+const uint8_t c5[500];
+const uint8_t c6[500];
+const uint8_t c7[500];
+const uint8_t c8[500];
+const uint8_t c9[500];
+const uint8_t c0[500];
 # 16 "./tftst.h" 2
 
 
@@ -5332,7 +5347,7 @@ void tftstSetWindow(uint8_t xStart, uint8_t xEnd, uint8_t yStart, uint8_t yEnd) 
 
 void tftstWriteColor(uint16_t color) {
     tftstWriteData(color >> 8);
-    tftstWriteData(color & 0xFF | 0x80);
+    tftstWriteData(color & 0xFF);
 }
 
 void tftstFillScreen(uint16_t color) {

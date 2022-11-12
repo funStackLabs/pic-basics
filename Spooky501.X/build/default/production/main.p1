@@ -6,24 +6,33 @@ Version 4.0 HI-TECH Software Intermediate Code
 "468
 [; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 468: extern volatile __control unsigned char TRISGPIO __attribute__((address(0x006)));
 [v _TRISGPIO `VWuc ~T0 @X0 0 e@6 ]
-"579
-[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 579: extern volatile __bit GP3 __attribute__((address(0x33)));
-[v _GP3 `Vb ~T0 @X0 0 e@51 ]
 "576
 [; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 576: extern volatile __bit GP2 __attribute__((address(0x32)));
 [v _GP2 `Vb ~T0 @X0 0 e@50 ]
+"579
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 579: extern volatile __bit GP3 __attribute__((address(0x33)));
+[v _GP3 `Vb ~T0 @X0 0 e@51 ]
+"495
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 495: extern volatile __bit ADON __attribute__((address(0x38)));
+[v _ADON `Vb ~T0 @X0 0 e@56 ]
+"567
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 567: extern volatile __bit GO_nDONE __attribute__((address(0x39)));
+[v _GO_nDONE `Vb ~T0 @X0 0 e@57 ]
+"390
+[; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 390: extern volatile unsigned char ADRES __attribute__((address(0x008)));
+[v _ADRES `Vuc ~T0 @X0 0 e@8 ]
 "73
 [; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 73: extern volatile unsigned char TMR0 __attribute__((address(0x001)));
 [v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
-"14 main.c
+"15 main.c
 [p x IOSCFS  =  8MHZ     ]
-"15
-[p x MCPU  =  OFF        ]
 "16
-[p x WDTE  =  ON         ]
+[p x MCPU  =  OFF        ]
 "17
-[p x CP  =  OFF          ]
+[p x WDTE  =  ON         ]
 "18
+[p x CP  =  OFF          ]
+"19
 [p x MCLRE  =  OFF       ]
 "55 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
 [; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 55: __asm("INDF equ 00h");
@@ -53,84 +62,124 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h: 392: __asm("ADRES equ 08h");
 [; <" ADRES equ 08h ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"28 main.c
-[; ;main.c: 28: void main(void) {
+"29 main.c
+[; ;main.c: 29: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"32
-[; ;main.c: 32:     OPTION = 0b11010010;
+"34
+[; ;main.c: 34:     OPTION = 0b11010010;
 [e = _OPTION -> -> 210 `i `uc ]
-"33
-[; ;main.c: 33:     TRISGPIO = 0b11111011;
-[e = _TRISGPIO -> -> 251 `i `uc ]
 "35
-[; ;main.c: 35:     int16_t duty = 0;
+[; ;main.c: 35:     TRISGPIO = 0b11111011;
+[e = _TRISGPIO -> -> 251 `i `uc ]
+"37
+[; ;main.c: 37:     int16_t duty = 0;
 [v _duty `i ~T0 @X0 1 a ]
 [e = _duty -> 0 `i ]
-"36
-[; ;main.c: 36:     int8_t dutyDelta = 1;
+"38
+[; ;main.c: 38:     int8_t dutyDelta = 1;
 [v _dutyDelta `c ~T0 @X0 1 a ]
 [e = _dutyDelta -> -> 1 `i `c ]
-"37
-[; ;main.c: 37:     uint8_t animationCounter = 0;
+"39
+[; ;main.c: 39:     uint8_t animationCounter = 0;
 [v _animationCounter `uc ~T0 @X0 1 a ]
 [e = _animationCounter -> -> 0 `i `uc ]
-"38
-[; ;main.c: 38:     while (1) {
-[e :U 26 ]
-{
 "40
-[; ;main.c: 40:         if (GP3 == 0 && duty == 50) {
-[e $ ! && == -> _GP3 `i -> 0 `i == _duty -> 50 `i 28  ]
-{
-"41
-[; ;main.c: 41:             GP2 = 1;
+[; ;main.c: 40:     GP2 = 1;
 [e = _GP2 -> -> 1 `i `b ]
 "42
-[; ;main.c: 42:             __asm("sleep");
-[; <" sleep ;# ">
-"43
-[; ;main.c: 43:         }
-}
-[e :U 28 ]
-"45
-[; ;main.c: 45:         GP2 = TMR0 > duty;
-[e = _GP2 > -> _TMR0 `i _duty ]
-"46
-[; ;main.c: 46:         animationCounter += 4;
-[e =+ _animationCounter -> -> 4 `i `uc ]
-"47
-[; ;main.c: 47:         duty += animationCounter == 0 ? dutyDelta : 0;
-[e =+ _duty ? == -> _animationCounter `i -> 0 `i : -> _dutyDelta `i -> 0 `i ]
-"48
-[; ;main.c: 48:         if (duty < 50 || duty > 300) {
-[e $ ! || < _duty -> 50 `i > _duty -> 300 `i 29  ]
+[; ;main.c: 42:     while (1) {
+[e :U 26 ]
 {
-"49
-[; ;main.c: 49:             dutyDelta = -dutyDelta;
-[e = _dutyDelta -> -U -> _dutyDelta `i `c ]
-"50
-[; ;main.c: 50:             duty = duty < 50 ? 50 : 300;
-[e = _duty ? < _duty -> 50 `i : -> 50 `i -> 300 `i ]
-"51
-[; ;main.c: 51:         }
+"43
+[; ;main.c: 43:         if (GP3 == 0 && duty == 50) {
+[e $ ! && == -> _GP3 `i -> 0 `i == _duty -> 50 `i 28  ]
+{
+"44
+[; ;main.c: 44:             GP2 = 1;
+[e = _GP2 -> -> 1 `i `b ]
+"45
+[; ;main.c: 45:             __asm("sleep");
+[; <" sleep ;# ">
+"46
+[; ;main.c: 46:         } else if (GP3 == 1 && duty == 50){
 }
-[e :U 29 ]
+[e $U 29  ]
+[e :U 28 ]
+[e $ ! && == -> _GP3 `i -> 1 `i == _duty -> 50 `i 30  ]
+{
+"47
+[; ;main.c: 47:             ADON = 1;
+[e = _ADON -> -> 1 `i `b ]
+"48
+[; ;main.c: 48:             GO_nDONE = 1;
+[e = _GO_nDONE -> -> 1 `i `b ]
+"49
+[; ;main.c: 49:             while(GO_nDONE){};
+[e $U 31  ]
+[e :U 32 ]
+{
+}
+[e :U 31 ]
+[e $ _GO_nDONE 32  ]
+[e :U 33 ]
+"50
+[; ;main.c: 50:             if (ADRES > 48) {
+[e $ ! > -> _ADRES `i -> 48 `i 34  ]
+{
+"51
+[; ;main.c: 51:                 GP2 = 1;
+[e = _GP2 -> -> 1 `i `b ]
+"52
+[; ;main.c: 52:                 __asm("sleep");
+[; <" sleep ;# ">
 "53
-[; ;main.c: 53:         __asm("clrwdt");
-[; <" clrwdt ;# ">
+[; ;main.c: 53:             }
+}
+[e :U 34 ]
 "54
-[; ;main.c: 54:     }
+[; ;main.c: 54:         }
+}
+[e :U 30 ]
+[e :U 29 ]
+"55
+[; ;main.c: 55:         GP2 = TMR0 > duty;
+[e = _GP2 > -> _TMR0 `i _duty ]
+"56
+[; ;main.c: 56:         animationCounter += 4;
+[e =+ _animationCounter -> -> 4 `i `uc ]
+"57
+[; ;main.c: 57:         duty += animationCounter == 0 ? dutyDelta : 0;
+[e =+ _duty ? == -> _animationCounter `i -> 0 `i : -> _dutyDelta `i -> 0 `i ]
+"58
+[; ;main.c: 58:         if (duty < 50 || duty > 300) {
+[e $ ! || < _duty -> 50 `i > _duty -> 300 `i 35  ]
+{
+"59
+[; ;main.c: 59:             dutyDelta = -dutyDelta;
+[e = _dutyDelta -> -U -> _dutyDelta `i `c ]
+"60
+[; ;main.c: 60:             duty = duty < 50 ? 50 : 300;
+[e = _duty ? < _duty -> 50 `i : -> 50 `i -> 300 `i ]
+"61
+[; ;main.c: 61:         }
+}
+[e :U 35 ]
+"63
+[; ;main.c: 63:         __asm("clrwdt");
+[; <" clrwdt ;# ">
+"64
+[; ;main.c: 64:     }
 }
 [e :U 25 ]
 [e $U 26  ]
 [e :U 27 ]
-"55
-[; ;main.c: 55:     return;
+"65
+[; ;main.c: 65:     return;
 [e $UE 24  ]
-"56
-[; ;main.c: 56: }
+"66
+[; ;main.c: 66: }
 [e :UE 24 ]
 }

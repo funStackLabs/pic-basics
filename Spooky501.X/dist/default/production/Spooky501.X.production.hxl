@@ -8,11 +8,11 @@
 
 ### Memory Usage ###
  Intel Hex-file ranges:
-  0h - 10Bh		(dist/default/production/Spooky501.X.production.hex)
+  0h - 141h		(dist/default/production/Spooky501.X.production.hex)
   200h - 207h		(dist/default/production/Spooky501.X.production.hex)
   1FFEh - 1FFFh		(dist/default/production/Spooky501.X.production.hex)
  Unused ranges:
-  10Ch - 1FFh
+  142h - 1FFh
   208h - 1FFDh
 
 ### Hex Memory Map ###
@@ -38,7 +38,11 @@
 000000D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000000E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000000F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00000100 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
+00000100 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000110 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000120 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000130 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000140 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00000200 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- --
 ----------------------------------------------------------

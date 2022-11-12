@@ -7,7 +7,7 @@
 # 1 "/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 14 "main.c"
+# 15 "main.c"
 #pragma config IOSCFS = 8MHZ
 #pragma config MCPU = OFF
 #pragma config WDTE = ON
@@ -501,7 +501,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/xc.h" 2 3
-# 22 "main.c" 2
+# 23 "main.c" 2
 
 
 
@@ -512,19 +512,28 @@ void main(void) {
 
 
 
+
     OPTION = 0b11010010;
     TRISGPIO = 0b11111011;
 
     int16_t duty = 0;
     int8_t dutyDelta = 1;
     uint8_t animationCounter = 0;
-    while (1) {
+    GP2 = 1;
 
+    while (1) {
         if (GP3 == 0 && duty == 50) {
             GP2 = 1;
             __asm("sleep");
+        } else if (GP3 == 1 && duty == 50){
+            ADON = 1;
+            GO_nDONE = 1;
+            while(GO_nDONE){};
+            if (ADRES > 48) {
+                GP2 = 1;
+                __asm("sleep");
+            }
         }
-
         GP2 = TMR0 > duty;
         animationCounter += 4;
         duty += animationCounter == 0 ? dutyDelta : 0;

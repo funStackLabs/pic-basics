@@ -7,26 +7,32 @@
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 /opt/microchip/xc8/v2.36/pic/sources/c90/common/Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"28 /home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+"29 /home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
 [v _main main `(v  1 e 1 0 ]
 "73 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC10-12Fxxx_DFP/1.5.61/xc8/pic/include/proc/pic10f220.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"390
+[v _ADRES ADRES `VEuc  1 e 1 @8 ]
 "460
 [v _OPTION OPTION `VEWuc  1 e 1 @0 ]
 "468
 [v _TRISGPIO TRISGPIO `VEWuc  1 e 1 @6 ]
+"495
+[v _ADON ADON `VEb  1 e 0 @56 ]
+"567
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @57 ]
 "576
 [v _GP2 GP2 `VEb  1 e 0 @50 ]
 "579
 [v _GP3 GP3 `VEb  1 e 0 @51 ]
-"28 /home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+"29 /home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"35
-[v main@duty duty `i  1 a 2 3 ]
-"36
-[v main@dutyDelta dutyDelta `c  1 a 1 2 ]
 "37
+[v main@duty duty `i  1 a 2 3 ]
+"38
+[v main@dutyDelta dutyDelta `c  1 a 1 2 ]
+"39
 [v main@animationCounter animationCounter `uc  1 a 1 1 ]
-"56
+"66
 } 0

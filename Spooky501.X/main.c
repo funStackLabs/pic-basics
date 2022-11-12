@@ -37,13 +37,21 @@ void main(void) {
     int16_t duty = 0;
     int8_t dutyDelta = 1;
     uint8_t animationCounter = 0;
+    GP2 = 1;
+    
     while (1) {
-
         if (GP3 == 0 && duty == MIN_DUTY) {
             GP2 = 1;
             SLEEP();
+        } else if (GP3 == 1 && duty == MIN_DUTY){
+            ADON = 1;
+            GO_nDONE = 1;
+            while(GO_nDONE){};
+            if (ADRES > 48) {
+                GP2 = 1;
+                SLEEP();
+            }
         }
-
         GP2 = TMR0 > duty;
         animationCounter += 4;
         duty += animationCounter == 0 ? dutyDelta : 0;

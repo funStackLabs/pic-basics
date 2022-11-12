@@ -103,6 +103,20 @@ const char Font2[] = {
     0x02, 0x01, 0x02, 0x04, 0x02
 };
 
+const char FWidths[255];
+const char FHeights[255];
+
+
+const uint8_t c1[500];
+const uint8_t c2[500];
+const uint8_t c3[500];
+const uint8_t c4[500];
+const uint8_t c5[500];
+const uint8_t c6[500];
+const uint8_t c7[500];
+const uint8_t c8[500];
+const uint8_t c9[500];
+const uint8_t c0[500];
 
 #endif	/* TFTST_FONTS */
 

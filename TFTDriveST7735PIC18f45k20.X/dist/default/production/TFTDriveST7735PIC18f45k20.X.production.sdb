@@ -3,15 +3,15 @@
 [d edition pro ]
 [d chip 18F45K20 ]
 [d frameptr 4065 ]
-"72 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+"72 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
 [e E355 . `uc
 SPI_DEFAULT 0
 ]
-"51 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/main.c
+"51 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/main.c
 [e E3032 . `uc
 SPI_DEFAULT 0
 ]
-"22 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/tftst.h
+"22 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/tftst.h
 [v _tftstWriteCommand tftstWriteCommand `(v  1 s 1 tftstWriteCommand ]
 "28
 [v _tftstWriteData tftstWriteData `(v  1 s 1 tftstWriteData ]
@@ -89,27 +89,27 @@ SPI_DEFAULT 0
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 /opt/microchip/xc8/v2.36/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"48 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/main.c
+"48 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/main.c
 [v _demoAnimated demoAnimated `(v  1 e 1 0 ]
 "101
 [v _main main `(v  1 e 1 0 ]
-"50 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
+"50 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "59
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"55 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/pin_manager.c
+"55 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+"62 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
 [v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
 "72
 [v _SPI_Open SPI_Open `(a  1 e 1 0 ]
 "92
 [v _SPI_ExchangeByte SPI_ExchangeByte `(uc  1 e 1 0 ]
-"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/tmr2.c
+"62 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
-"170 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/tftst.h
+"170 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/tftst.h
 [v _FRM_CNT FRM_CNT `C[3]uc  1 e 3 0 ]
-"6 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/tftst_fonts.h
+"6 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/tftst_fonts.h
 [v _Font Font `C[255]uc  1 e 255 0 ]
 "59
 [v _Font2 Font2 `C[220]uc  1 e 220 0 ]
@@ -298,9 +298,9 @@ SPI_DEFAULT 0
 "69
 [v _nout nout `i  1 s 2 nout ]
 [s S159 . 4 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 `uc 1 operation 1 3 ]
-"58 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+"58 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
 [v _spi_configuration spi_configuration `C[1]S159  1 s 4 spi_configuration ]
-"101 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/main.c
+"101 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "122
@@ -320,7 +320,7 @@ SPI_DEFAULT 0
 [v demoAnimated@deltaY deltaY `c  1 a 1 22 ]
 "78
 } 0
-"32 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/tftst.h
+"32 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/tftst.h
 [v _tftstReadId tftstReadId `(uc  1 e 1 0 ]
 {
 "37
@@ -456,7 +456,7 @@ SPI_DEFAULT 0
 [v tftstWriteCommand@cmd_ cmd_ `uc  1 a 1 1 ]
 "26
 } 0
-"92 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+"92 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
 [v _SPI_ExchangeByte SPI_ExchangeByte `(uc  1 e 1 0 ]
 {
 [v SPI_ExchangeByte@data data `uc  1 a 1 wreg ]
@@ -468,10 +468,10 @@ SPI_DEFAULT 0
 "9 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S1022 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[u S1034 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
 "13
-[s S1025 _IO_FILE 11 `S1022 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v sprintf@f f `S1025  1 a 11 2 ]
+[s S1037 _IO_FILE 11 `S1034 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S1037  1 a 11 2 ]
 "12
 [v sprintf@ap ap `[1]*.39v  1 a 2 0 ]
 "9
@@ -484,9 +484,9 @@ SPI_DEFAULT 0
 {
 "1393
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 85 ]
-[s S1057 _IO_FILE 0 ]
+[s S1069 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.39S1057  1 p 2 79 ]
+[v vfprintf@fp fp `*.39S1069  1 p 2 79 ]
 [v vfprintf@fmt fmt `*.25Cuc  1 p 2 81 ]
 [v vfprintf@ap ap `*.39*.39v  1 p 2 83 ]
 "1404
@@ -496,9 +496,9 @@ SPI_DEFAULT 0
 {
 "696
 [v vfpfcnvrt@ll ll `o  1 a 8 71 ]
-[s S1057 _IO_FILE 0 ]
+[s S1069 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.39S1057  1 p 2 63 ]
+[v vfpfcnvrt@fp fp `*.39S1069  1 p 2 63 ]
 [v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 65 ]
 [v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 67 ]
 "1387
@@ -513,9 +513,9 @@ SPI_DEFAULT 0
 [v dtoa@s s `i  1 a 2 51 ]
 [v dtoa@w w `i  1 a 2 49 ]
 [v dtoa@p p `i  1 a 2 47 ]
-[s S1057 _IO_FILE 0 ]
+[s S1069 _IO_FILE 0 ]
 "287
-[v dtoa@fp fp `*.39S1057  1 p 2 27 ]
+[v dtoa@fp fp `*.39S1069  1 p 2 27 ]
 [v dtoa@d d `o  1 p 8 29 ]
 "328
 } 0
@@ -525,9 +525,9 @@ SPI_DEFAULT 0
 "74
 [v pad@w w `i  1 a 2 25 ]
 [v pad@i i `i  1 a 2 23 ]
-[s S1057 _IO_FILE 0 ]
+[s S1069 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.39S1057  1 p 2 16 ]
+[v pad@fp fp `*.39S1069  1 p 2 16 ]
 [v pad@buf buf `*.39uc  1 p 2 18 ]
 [v pad@p p `i  1 p 2 20 ]
 "95
@@ -550,18 +550,18 @@ SPI_DEFAULT 0
 [v fputs@c c `uc  1 a 1 13 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 9 ]
-[u S1022 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S1025 _IO_FILE 11 `S1022 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputs@fp fp `*.39S1025  1 p 2 11 ]
+[u S1034 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1037 _IO_FILE 11 `S1034 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S1037  1 p 2 11 ]
 "19
 } 0
 "8 /opt/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[u S1022 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S1025 _IO_FILE 11 `S1022 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.39S1025  1 p 2 2 ]
+[u S1034 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1037 _IO_FILE 11 `S1034 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S1037  1 p 2 2 ]
 "24
 } 0
 "7 /opt/microchip/xc8/v2.36/pic/sources/c99/common/putch.c
@@ -599,7 +599,7 @@ SPI_DEFAULT 0
 [v ___aodiv@divisor divisor `o  1 p 8 8 ]
 "43
 } 0
-"72 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+"72 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
 [v _SPI_Open SPI_Open `(a  1 e 1 0 ]
 {
 [v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E355  1 a 1 wreg ]
@@ -608,27 +608,27 @@ SPI_DEFAULT 0
 [v SPI_Open@spiUniqueConfiguration spiUniqueConfiguration `E355  1 a 1 1 ]
 "85
 } 0
-"50 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
+"50 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "57
 } 0
-"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/tmr2.c
+"62 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"62 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
+"62 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/spi.c
 [v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
 {
 "70
 } 0
-"55 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/pin_manager.c
+"55 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "94
 } 0
-"59 /home/gorkemkinik/MPLABXProjects/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
+"59 /home/gorkemkinik/code/pic-basics/TFTDriveST7735PIC18f45k20.X/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "65

@@ -14,10 +14,10 @@
 $dist/default/production/Spooky501.X.production.o
 cinit ENTRY 0 1 1 2 2 1
 idloc IDLOC 5 0 0 104 2 1
-maintext CODE 0 3 3 83 2 1
+maintext CODE 0 3 3 9E 2 1
 cstackBANK0 BANK0 1 10 10 5 1 1
 config CONFIG 4 FFF FFF 1 2 1
-$/tmp/xcXHJEGig.o
+$/tmp/xcXBmFDlA.o
 reset_vec CODE 0 FF FF 1 2 1
 end_init ENTRY 0 0 0 1 2 1
 config CONFIG 4 FFF FFF 1 2 1
@@ -29,11 +29,11 @@ config CONFIG 4 FFF FFF 1 2 1
 %UNUSED
 RAM 15-1B 1
 BANK0 15-1B 1
-ENTRY 86-FE 2
-CODE 86-FE 2
+ENTRY A1-FE 2
+CODE A1-FE 2
 SFR0 0-F 1
-STRCODE 86-FE 2
-STRING 86-FE 2
+STRCODE A1-FE 2
+STRING A1-FE 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -48,37 +48,46 @@ STRING 86-FE 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/Spooky501.X.production.o
-1 cinit ENTRY >133:/tmp/xcXflHPFa.s
-1 cinit ENTRY >136:/tmp/xcXflHPFa.s
-1 cinit ENTRY >142:/tmp/xcXflHPFa.s
-1 cinit ENTRY >144:/tmp/xcXflHPFa.s
-2 cinit ENTRY >145:/tmp/xcXflHPFa.s
-3 maintext CODE >28:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-3 maintext CODE >32:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-5 maintext CODE >33:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-7 maintext CODE >35:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-9 maintext CODE >36:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-B maintext CODE >37:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+1 cinit ENTRY >139:/tmp/xcXjHCpfl.s
+1 cinit ENTRY >142:/tmp/xcXjHCpfl.s
+1 cinit ENTRY >148:/tmp/xcXjHCpfl.s
+1 cinit ENTRY >150:/tmp/xcXjHCpfl.s
+2 cinit ENTRY >151:/tmp/xcXjHCpfl.s
+3 maintext CODE >29:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+3 maintext CODE >34:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+5 maintext CODE >35:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+7 maintext CODE >37:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+9 maintext CODE >38:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+B maintext CODE >39:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
 C maintext CODE >40:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-17 maintext CODE >41:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-18 maintext CODE >42:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+D maintext CODE >43:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+18 maintext CODE >44:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
 19 maintext CODE >45:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-26 maintext CODE >45:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-2A maintext CODE >45:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-30 maintext CODE >46:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-34 maintext CODE >47:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-41 maintext CODE >47:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-45 maintext CODE >48:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-4E maintext CODE >48:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-52 maintext CODE >48:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-5F maintext CODE >48:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-63 maintext CODE >48:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-67 maintext CODE >49:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-69 maintext CODE >50:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-72 maintext CODE >50:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-76 maintext CODE >50:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-83 maintext CODE >51:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
-83 maintext CODE >53:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+1A maintext CODE >46:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+26 maintext CODE >47:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+27 maintext CODE >48:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+28 maintext CODE >49:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+2C maintext CODE >50:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+2E maintext CODE >50:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+32 maintext CODE >51:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+33 maintext CODE >52:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+34 maintext CODE >55:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+41 maintext CODE >55:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+45 maintext CODE >55:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+4B maintext CODE >56:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+4F maintext CODE >57:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+5C maintext CODE >57:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+60 maintext CODE >58:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+69 maintext CODE >58:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+6D maintext CODE >58:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+7A maintext CODE >58:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+7E maintext CODE >58:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+82 maintext CODE >59:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+84 maintext CODE >60:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+8D maintext CODE >60:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+91 maintext CODE >60:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+9E maintext CODE >61:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
+9E maintext CODE >63:/home/gorkemkinik/MPLABXProjects/Spooky501.X/main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -99,11 +108,12 @@ __Hspace_4 1FFF 0 ABS 0 - -
 _TRISGPIO 6 0 ABS 0 - dist/default/production/Spooky501.X.production.o
 ltemp0 1C 0 ABS 0 - dist/default/production/Spooky501.X.production.o
 __Hstrings 0 0 STRING 0 strings -
+_ADON 38 0 ABS 0 - dist/default/production/Spooky501.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production/Spooky501.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcXHJEGig.o
+___sp 0 0 STACK 2 stack /tmp/xcXBmFDlA.o
 _main 6 0 CODE 0 maintext dist/default/production/Spooky501.X.production.o
 btemp 1C 0 ABS 0 - dist/default/production/Spooky501.X.production.o
-start 0 0 ENTRY 0 init /tmp/xcXHJEGig.o
+start 0 0 ENTRY 0 init /tmp/xcXBmFDlA.o
 __Hpowerup 0 0 CODE 0 powerup -
 ttemp0 1C 0 ABS 0 - dist/default/production/Spooky501.X.production.o
 wtemp0 1C 0 ABS 0 - dist/default/production/Spooky501.X.production.o
@@ -112,13 +122,14 @@ __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 6 0 ENTRY 0 clrtext -
 main@dutyDelta 12 0 BANK0 1 cstackBANK0 dist/default/production/Spooky501.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - /tmp/xcXHJEGig.o
-___stacklo 0 0 ABS 0 - /tmp/xcXHJEGig.o
+___stackhi 0 0 ABS 0 - /tmp/xcXBmFDlA.o
+___stacklo 0 0 ABS 0 - /tmp/xcXBmFDlA.o
 __Hjmp_tab 0 0 ABS 0 jmp_tab -
 start_initialization 2 0 ENTRY 0 cinit dist/default/production/Spooky501.X.production.o
 _OPTION 0 0 ABS 0 - dist/default/production/Spooky501.X.production.o
+_GO_nDONE 39 0 ABS 0 - dist/default/production/Spooky501.X.production.o
 __pcstackBANK0 10 0 BANK0 1 cstackBANK0 dist/default/production/Spooky501.X.production.o
-___int_sp 0 0 STACK 2 stack /tmp/xcXHJEGig.o
+___int_sp 0 0 STACK 2 stack /tmp/xcXBmFDlA.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hcinit 6 0 ENTRY 0 cinit -
 __Hidloc 208 0 IDLOC 5 idloc -
@@ -143,10 +154,10 @@ __Ltext 0 0 ABS 0 text -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 _GP2 32 0 ABS 0 - dist/default/production/Spooky501.X.production.o
 _GP3 33 0 ABS 0 - dist/default/production/Spooky501.X.production.o
-__S0 86 0 ABS 0 - -
+__S0 A1 0 ABS 0 - -
 __S1 15 0 ABS 0 - -
 main@animationCounter 11 0 BANK0 1 cstackBANK0 dist/default/production/Spooky501.X.production.o
-reset_vec 1FE 0 CODE 0 reset_vec /tmp/xcXHJEGig.o
+reset_vec 1FE 0 CODE 0 reset_vec /tmp/xcXBmFDlA.o
 __pmaintext 6 0 CODE 0 maintext dist/default/production/Spooky501.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
@@ -167,7 +178,8 @@ __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 6 0 ENTRY 0 clrtext -
 __Hreset_wrap 0 0 ENTRY 0 reset_wrap -
 __Hend_init 2 0 ENTRY 0 end_init -
-__end_of_main 10C 0 CODE 0 maintext dist/default/production/Spooky501.X.production.o
+__end_of_main 142 0 CODE 0 maintext dist/default/production/Spooky501.X.production.o
+_ADRES 8 0 ABS 0 - dist/default/production/Spooky501.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __initialization 2 0 ENTRY 0 cinit dist/default/production/Spooky501.X.production.o
@@ -198,7 +210,7 @@ __Lreset_wrap 0 0 ENTRY 0 reset_wrap -
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-maintext 0 3 6 83 2
+maintext 0 3 6 9E 2
 cstackBANK0 1 10 10 5 1
 reset_wrap 0 0 0 3 2
 reset_vec 0 FF 1FE 1 2
