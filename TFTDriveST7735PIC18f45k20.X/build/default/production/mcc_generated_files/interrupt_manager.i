@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "mcc_generated_files/interrupt_manager.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,15 @@
 # 1 "<built-in>" 2
 # 1 "/opt/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 44 "main.c"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 1 "mcc_generated_files/interrupt_manager.c" 2
+# 49 "mcc_generated_files/interrupt_manager.c"
+# 1 "mcc_generated_files/interrupt_manager.h" 1
+# 110 "mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 49 "mcc_generated_files/interrupt_manager.c" 2
+
+# 1 "mcc_generated_files/mcc.h" 1
+# 49 "mcc_generated_files/mcc.h"
 # 1 "/opt/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/xc.h" 1 3
 # 18 "/opt/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -4904,21 +4909,21 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "/opt/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
+# 49 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
+# 1 "mcc_generated_files/device_config.h" 1
+# 50 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 166 "./mcc_generated_files/pin_manager.h"
+# 1 "mcc_generated_files/pin_manager.h" 1
+# 166 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 178 "./mcc_generated_files/pin_manager.h"
+# 178 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
+# 51 "mcc_generated_files/mcc.h" 2
 
 
 # 1 "/opt/microchip/xc8/v2.36/pic/include/c99/stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
+# 53 "mcc_generated_files/mcc.h" 2
 
 # 1 "/opt/microchip/xc8/v2.36/pic/include/c99/conio.h" 1 3
 
@@ -5072,15 +5077,11 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 8 "/opt/microchip/xc8/v2.36/pic/include/c99/conio.h" 2 3
-# 54 "./mcc_generated_files/mcc.h" 2
+# 54 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/interrupt_manager.h" 1
-# 110 "./mcc_generated_files/interrupt_manager.h"
-void INTERRUPT_Initialize (void);
-# 55 "./mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/spi.h" 1
-# 59 "./mcc_generated_files/spi.h"
+# 1 "mcc_generated_files/spi.h" 1
+# 59 "mcc_generated_files/spi.h"
 typedef enum {
     SPI_DEFAULT
 } spi_modes_t;
@@ -5094,707 +5095,78 @@ void SPI_WriteBlock(void *block, size_t blockSize);
 void SPI_ReadBlock(void *block, size_t blockSize);
 void SPI_WriteByte(uint8_t byte);
 uint8_t SPI_ReadByte(void);
-# 56 "./mcc_generated_files/mcc.h" 2
+# 56 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/tmr1.h" 1
-# 95 "./mcc_generated_files/tmr1.h"
+# 1 "mcc_generated_files/tmr1.h" 1
+# 95 "mcc_generated_files/tmr1.h"
 void TMR1_Initialize(void);
-# 126 "./mcc_generated_files/tmr1.h"
+# 126 "mcc_generated_files/tmr1.h"
 void TMR1_StartTimer(void);
-# 156 "./mcc_generated_files/tmr1.h"
+# 156 "mcc_generated_files/tmr1.h"
 void TMR1_StopTimer(void);
-# 189 "./mcc_generated_files/tmr1.h"
+# 189 "mcc_generated_files/tmr1.h"
 uint16_t TMR1_ReadTimer(void);
-# 215 "./mcc_generated_files/tmr1.h"
+# 215 "mcc_generated_files/tmr1.h"
 void TMR1_WriteTimer(uint16_t timerVal);
-# 247 "./mcc_generated_files/tmr1.h"
+# 247 "mcc_generated_files/tmr1.h"
 void TMR1_Reload(void);
-# 263 "./mcc_generated_files/tmr1.h"
+# 263 "mcc_generated_files/tmr1.h"
 void TMR1_ISR(void);
-# 281 "./mcc_generated_files/tmr1.h"
+# 281 "mcc_generated_files/tmr1.h"
 void TMR1_CallBack(void);
-# 299 "./mcc_generated_files/tmr1.h"
+# 299 "mcc_generated_files/tmr1.h"
  void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 317 "./mcc_generated_files/tmr1.h"
+# 317 "mcc_generated_files/tmr1.h"
 extern void (*TMR1_InterruptHandler)(void);
-# 335 "./mcc_generated_files/tmr1.h"
+# 335 "mcc_generated_files/tmr1.h"
 void TMR1_DefaultInterruptHandler(void);
-# 57 "./mcc_generated_files/mcc.h" 2
+# 57 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/tmr2.h" 1
-# 103 "./mcc_generated_files/tmr2.h"
+# 1 "mcc_generated_files/tmr2.h" 1
+# 103 "mcc_generated_files/tmr2.h"
 void TMR2_Initialize(void);
-# 132 "./mcc_generated_files/tmr2.h"
+# 132 "mcc_generated_files/tmr2.h"
 void TMR2_StartTimer(void);
-# 164 "./mcc_generated_files/tmr2.h"
+# 164 "mcc_generated_files/tmr2.h"
 void TMR2_StopTimer(void);
-# 199 "./mcc_generated_files/tmr2.h"
+# 199 "mcc_generated_files/tmr2.h"
 uint8_t TMR2_ReadTimer(void);
-# 238 "./mcc_generated_files/tmr2.h"
+# 238 "mcc_generated_files/tmr2.h"
 void TMR2_WriteTimer(uint8_t timerVal);
-# 290 "./mcc_generated_files/tmr2.h"
+# 290 "mcc_generated_files/tmr2.h"
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
-# 325 "./mcc_generated_files/tmr2.h"
+# 325 "mcc_generated_files/tmr2.h"
 _Bool TMR2_HasOverflowOccured(void);
-# 58 "./mcc_generated_files/mcc.h" 2
-# 73 "./mcc_generated_files/mcc.h"
+# 58 "mcc_generated_files/mcc.h" 2
+# 73 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 86 "./mcc_generated_files/mcc.h"
+# 86 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 45 "main.c" 2
-# 1 "./tftst.h" 1
-# 12 "./tftst.h"
-# 1 "/opt/microchip/xc8/v2.36/pic/include/c99/string.h" 1 3
-# 25 "/opt/microchip/xc8/v2.36/pic/include/c99/string.h" 3
-# 1 "/opt/microchip/xc8/v2.36/pic/include/c99/bits/alltypes.h" 1 3
-# 411 "/opt/microchip/xc8/v2.36/pic/include/c99/bits/alltypes.h" 3
-typedef struct __locale_struct * locale_t;
-# 26 "/opt/microchip/xc8/v2.36/pic/include/c99/string.h" 2 3
-
-void *memcpy (void *restrict, const void *restrict, size_t);
-void *memmove (void *, const void *, size_t);
-void *memset (void *, int, size_t);
-int memcmp (const void *, const void *, size_t);
-void *memchr (const void *, int, size_t);
-
-char *strcpy (char *restrict, const char *restrict);
-char *strncpy (char *restrict, const char *restrict, size_t);
-
-char *strcat (char *restrict, const char *restrict);
-char *strncat (char *restrict, const char *restrict, size_t);
-
-int strcmp (const char *, const char *);
-int strncmp (const char *, const char *, size_t);
-
-int strcoll (const char *, const char *);
-size_t strxfrm (char *restrict, const char *restrict, size_t);
-
-char *strchr (const char *, int);
-char *strrchr (const char *, int);
-
-size_t strcspn (const char *, const char *);
-size_t strspn (const char *, const char *);
-char *strpbrk (const char *, const char *);
-char *strstr (const char *, const char *);
-char *strtok (char *restrict, const char *restrict);
-
-size_t strlen (const char *);
-
-char *strerror (int);
-# 65 "/opt/microchip/xc8/v2.36/pic/include/c99/string.h" 3
-char *strtok_r (char *restrict, const char *restrict, char **restrict);
-int strerror_r (int, char *, size_t);
-char *stpcpy(char *restrict, const char *restrict);
-char *stpncpy(char *restrict, const char *restrict, size_t);
-size_t strnlen (const char *, size_t);
-char *strdup (const char *);
-char *strndup (const char *, size_t);
-char *strsignal(int);
-char *strerror_l (int, locale_t);
-int strcoll_l (const char *, const char *, locale_t);
-size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+# 50 "mcc_generated_files/interrupt_manager.c" 2
 
 
+void INTERRUPT_Initialize (void)
+{
 
-
-void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 13 "./tftst.h" 2
-# 1 "./tftst_config.h" 1
-# 14 "./tftst.h" 2
-# 1 "./tftst_7735commands.h" 1
-# 15 "./tftst.h" 2
-# 1 "./tftst_fonts.h" 1
-
-
-
-
-
-const char Font[] = {
-    0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x5F, 0x00, 0x00,
-    0x00, 0x07, 0x00, 0x07, 0x00,
-    0x14, 0x7F, 0x14, 0x7F, 0x14,
-    0x24, 0x2A, 0x7F, 0x2A, 0x12,
-    0x23, 0x13, 0x08, 0x64, 0x62,
-    0x36, 0x49, 0x56, 0x20, 0x50,
-    0x00, 0x08, 0x07, 0x03, 0x00,
-    0x00, 0x1C, 0x22, 0x41, 0x00,
-    0x00, 0x41, 0x22, 0x1C, 0x00,
-    0x2A, 0x1C, 0x7F, 0x1C, 0x2A,
-    0x08, 0x08, 0x3E, 0x08, 0x08,
-    0x00, 0x80, 0x70, 0x30, 0x00,
-    0x08, 0x08, 0x08, 0x08, 0x08,
-    0x00, 0x00, 0x60, 0x60, 0x00,
-    0x20, 0x10, 0x08, 0x04, 0x02,
-    0x3E, 0x51, 0x49, 0x45, 0x3E,
-    0x00, 0x42, 0x7F, 0x40, 0x00,
-    0x72, 0x49, 0x49, 0x49, 0x46,
-    0x21, 0x41, 0x49, 0x4D, 0x33,
-    0x18, 0x14, 0x12, 0x7F, 0x10,
-    0x27, 0x45, 0x45, 0x45, 0x39,
-    0x3C, 0x4A, 0x49, 0x49, 0x31,
-    0x41, 0x21, 0x11, 0x09, 0x07,
-    0x36, 0x49, 0x49, 0x49, 0x36,
-    0x46, 0x49, 0x49, 0x29, 0x1E,
-    0x00, 0x00, 0x14, 0x00, 0x00,
-    0x00, 0x40, 0x34, 0x00, 0x00,
-    0x00, 0x08, 0x14, 0x22, 0x41,
-    0x14, 0x14, 0x14, 0x14, 0x14,
-    0x00, 0x41, 0x22, 0x14, 0x08,
-    0x02, 0x01, 0x59, 0x09, 0x06,
-    0x3E, 0x41, 0x5D, 0x59, 0x4E,
-    0x7C, 0x12, 0x11, 0x12, 0x7C,
-    0x7F, 0x49, 0x49, 0x49, 0x36,
-    0x3E, 0x41, 0x41, 0x41, 0x22,
-    0x7F, 0x41, 0x41, 0x41, 0x3E,
-    0x7F, 0x49, 0x49, 0x49, 0x41,
-    0x7F, 0x09, 0x09, 0x09, 0x01,
-    0x3E, 0x41, 0x41, 0x51, 0x73,
-    0x7F, 0x08, 0x08, 0x08, 0x7F,
-    0x00, 0x41, 0x7F, 0x41, 0x00,
-    0x20, 0x40, 0x41, 0x3F, 0x01,
-    0x7F, 0x08, 0x14, 0x22, 0x41,
-    0x7F, 0x40, 0x40, 0x40, 0x40,
-    0x7F, 0x02, 0x1C, 0x02, 0x7F,
-    0x7F, 0x04, 0x08, 0x10, 0x7F,
-    0x3E, 0x41, 0x41, 0x41, 0x3E,
-    0x7F, 0x09, 0x09, 0x09, 0x06,
-    0x3E, 0x41, 0x51, 0x21, 0x5E,
-    0x7F, 0x09, 0x19, 0x29, 0x46
-};
-const char Font2[] = {
-    0x26, 0x49, 0x49, 0x49, 0x32,
-    0x03, 0x01, 0x7F, 0x01, 0x03,
-    0x3F, 0x40, 0x40, 0x40, 0x3F,
-    0x1F, 0x20, 0x40, 0x20, 0x1F,
-    0x3F, 0x40, 0x38, 0x40, 0x3F,
-    0x63, 0x14, 0x08, 0x14, 0x63,
-    0x03, 0x04, 0x78, 0x04, 0x03,
-    0x61, 0x59, 0x49, 0x4D, 0x43,
-    0x00, 0x7F, 0x41, 0x41, 0x41,
-    0x02, 0x04, 0x08, 0x10, 0x20,
-    0x00, 0x41, 0x41, 0x41, 0x7F,
-    0x04, 0x02, 0x01, 0x02, 0x04,
-    0x40, 0x40, 0x40, 0x40, 0x40,
-    0x00, 0x03, 0x07, 0x08, 0x00,
-    0x20, 0x54, 0x54, 0x78, 0x40,
-    0x7F, 0x28, 0x44, 0x44, 0x38,
-    0x38, 0x44, 0x44, 0x44, 0x28,
-    0x38, 0x44, 0x44, 0x28, 0x7F,
-    0x38, 0x54, 0x54, 0x54, 0x18,
-    0x00, 0x08, 0x7E, 0x09, 0x02,
-    0x18, 0xA4, 0xA4, 0x9C, 0x78,
-    0x7F, 0x08, 0x04, 0x04, 0x78,
-    0x00, 0x44, 0x7D, 0x40, 0x00,
-    0x20, 0x40, 0x40, 0x3D, 0x00,
-    0x7F, 0x10, 0x28, 0x44, 0x00,
-    0x00, 0x41, 0x7F, 0x40, 0x00,
-    0x7C, 0x04, 0x78, 0x04, 0x78,
-    0x7C, 0x08, 0x04, 0x04, 0x78,
-    0x38, 0x44, 0x44, 0x44, 0x38,
-    0xFC, 0x18, 0x24, 0x24, 0x18,
-    0x18, 0x24, 0x24, 0x18, 0xFC,
-    0x7C, 0x08, 0x04, 0x04, 0x08,
-    0x48, 0x54, 0x54, 0x54, 0x24,
-    0x04, 0x04, 0x3F, 0x44, 0x24,
-    0x3C, 0x40, 0x40, 0x20, 0x7C,
-    0x1C, 0x20, 0x40, 0x20, 0x1C,
-    0x3C, 0x40, 0x30, 0x40, 0x3C,
-    0x44, 0x28, 0x10, 0x28, 0x44,
-    0x4C, 0x90, 0x90, 0x90, 0x7C,
-    0x44, 0x64, 0x54, 0x4C, 0x44,
-    0x00, 0x08, 0x36, 0x41, 0x00,
-    0x00, 0x00, 0x77, 0x00, 0x00,
-    0x00, 0x41, 0x36, 0x08, 0x00,
-    0x02, 0x01, 0x02, 0x04, 0x02
-};
-# 16 "./tftst.h" 2
-
-
-const uint16_t TFTST_PIXEL_COUNT = 20480;
-const uint8_t TFTST_WIDTH = 160;
-const uint8_t TFTST_HEIGHT = 128;
-
-static void tftstWriteCommand(uint8_t cmd_) {
-    do { LATDbits.LATD2 = 0; } while(0);
-    SPI_ExchangeByte(cmd_);
-    do { LATDbits.LATD2 = 1; } while(0);
+    RCONbits.IPEN = 0;
 }
 
-static void tftstWriteData(uint8_t data_) {
-    SPI_ExchangeByte(data_);
-}
+void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+{
 
-uint8_t tftstReadId() {
-    do { LATDbits.LATD2 = 0; } while(0);
-    tftstWriteData(0xDA);
-    do { TRISCbits.TRISC5 = 1; } while(0);
-    do { LATDbits.LATD2 = 1; } while(0);
-    uint8_t id1 = SPI_ExchangeByte(0);
-    do { TRISCbits.TRISC5 = 0; } while(0);
-    return id1;
-}
-
-void tftstSleep() {
-    tftstWriteCommand(0x10);
-    do { LATDbits.LATD7 = 0; } while(0);
-}
-
-void tftstWakeUp() {
-    tftstWriteCommand(0x11);
-    _delay((unsigned long)((10)*(32000000/4000.0)));
-    do { LATDbits.LATD7 = 1; } while(0);
-}
-
-void tftstSetWindow(uint8_t xStart, uint8_t xEnd, uint8_t yStart, uint8_t yEnd) {
-    tftstWriteCommand(0x2A);
-    tftstWriteData(0);
-    tftstWriteData(xStart);
-    tftstWriteData(0);
-    tftstWriteData(xEnd);
-    tftstWriteCommand(0x2B);
-    tftstWriteData(0);
-    tftstWriteData(yStart);
-    tftstWriteData(0);
-    tftstWriteData(yEnd);
-    tftstWriteCommand(0x2C);
-}
-
-void tftstWriteColor(uint16_t color) {
-    tftstWriteData(color >> 8);
-    tftstWriteData(color & 0xFF);
-}
-
-void tftstFillScreen(uint16_t color) {
-    uint16_t counter = TFTST_PIXEL_COUNT;
-    tftstSetWindow(0, TFTST_WIDTH, 0, TFTST_HEIGHT);
-    while (counter--) {
-        tftstWriteColor(color);
-    }
-}
-
-void tftstDrawPixel(uint8_t x, uint8_t y, uint16_t color) {
-    tftstSetWindow(x, x + 1, y, y + 1);
-    tftstWriteColor(color);
-}
-
-void tftstDrawHorizontalLine(uint8_t x, uint8_t y, uint8_t width, uint16_t color) {
-    tftstSetWindow(x, x + width, y, y);
-    uint8_t w = width;
-    while (w--) {
-        tftstWriteColor(color);
-    }
-}
-
-void tftstDrawVerticalLine(uint8_t x, uint8_t y, uint8_t TFTST_HEIGHT, uint16_t color) {
-    tftstSetWindow(x, x, y, y + TFTST_HEIGHT);
-    uint8_t h = TFTST_HEIGHT;
-    while (h--) {
-        tftstWriteColor(color);
-    }
-}
-
-void tftstFillRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint16_t color) {
-    tftstSetWindow(x, x + w - 1, y, y + h - 1);
-    for(uint8_t i = 0; i < w ; i++){
-        for(uint8_t j = 0; j < h ; j++){
-            tftstWriteColor(color);
+    if(INTCONbits.PEIE == 1)
+    {
+        if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF == 1)
+        {
+            TMR1_ISR();
         }
-    }
-}
-
-void tftstDrawRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint16_t color) {
-    tftstDrawHorizontalLine(x, y, w, color);
-    tftstDrawHorizontalLine(x, y + h - 1, w, color);
-    tftstDrawVerticalLine(x, y, h, color);
-    tftstDrawVerticalLine(x + w - 1, y, h, color);
-}
-
-void tftstDrawChar(uint8_t x, uint8_t y, uint8_t c, uint16_t color, uint16_t bg, uint8_t size) {
-    int8_t i, j;
-    if ((x >= TFTST_WIDTH) || (y >= TFTST_HEIGHT))
-        return;
-    if (size < 1) size = 1;
-    if ((c < ' ') || (c > '~'))
-        c = '?';
-    for (i = 0; i < 5; i++) {
-        uint8_t line;
-        if (c < 'S')
-            line = Font[(c - 32)*5 + i];
         else
-            line = Font2[(c - 'S')*5 + i];
-        for (j = 0; j < 7; j++, line >>= 1) {
-            if (line & 0x01) {
-                if (size == 1) tftstDrawPixel(x + i, y + j, color);
-                else tftstFillRect(x + (i * size), y + (j * size), size, size, color);
-            } else if (bg != color) {
-                if (size == 1) tftstDrawPixel(x + i, y + j, bg);
-                else tftstFillRect(x + i*size, y + j*size, size, size, bg);
-            }
+        {
+
         }
     }
-}
+    else
+    {
 
-void tftstDrawText(uint8_t x, uint8_t y, char *_text, uint16_t color, uint16_t bg, uint8_t size) {
-    uint8_t cursor_x, cursor_y;
-    uint16_t textsize, i;
-    cursor_x = x, cursor_y = y;
-    textsize = strlen(_text);
-    for (i = 0; i < textsize; i++) {
-        if (((cursor_x + size * 5) > TFTST_WIDTH)) {
-            cursor_x = 0;
-            cursor_y = cursor_y + size * 7 + 3;
-            if (cursor_y > TFTST_HEIGHT) cursor_y = TFTST_HEIGHT;
-            if (_text[i] == 0x20) goto _skip;
-        }
-        tftstDrawChar(cursor_x, cursor_y, _text[i], color, bg, size);
-        cursor_x = cursor_x + size * 6;
-        if (cursor_x > TFTST_WIDTH) cursor_x = TFTST_WIDTH;
-_skip:
-        ;
     }
-}
-
-void tftstSelect() {
-    do { LATDbits.LATD0 = 0; } while(0);
-}
-
-void tftstUnselect() {
-    do { LATDbits.LATD0 = 1; } while(0);
-}
-
-const uint8_t FRM_CNT[] = {0x01, 0x2C, 0x2D};
-
-void tftstInit() {
-    do { LATDbits.LATD1 = 0; } while(0);
-    _delay((unsigned long)((100)*(32000000/4000.0)));
-    do { LATDbits.LATD1 = 1; } while(0);
-    _delay((unsigned long)((100)*(32000000/4000.0)));
-
-    do { LATDbits.LATD0 = 0; } while(0);
-    tftstWriteCommand(0x01);
-    _delay((unsigned long)((100)*(32000000/4000.0)));
-    tftstWriteCommand(0x11);
-    _delay((unsigned long)((100)*(32000000/4000.0)));
-
-    tftstWriteCommand(0xB1);
-    tftstWriteData(FRM_CNT[0]);
-    tftstWriteData(FRM_CNT[1]);
-    tftstWriteData(FRM_CNT[2]);
-    tftstWriteCommand(0xB2);
-    tftstWriteData(FRM_CNT[0]);
-    tftstWriteData(FRM_CNT[1]);
-    tftstWriteData(FRM_CNT[2]);
-    tftstWriteCommand(0xB3);
-    tftstWriteData(FRM_CNT[0]);
-    tftstWriteData(FRM_CNT[1]);
-    tftstWriteData(FRM_CNT[2]);
-
-    tftstWriteCommand(0xB4);
-    tftstWriteData(0x07);
-    tftstWriteCommand(0xC0);
-    tftstWriteData(0xA2);
-    tftstWriteData(0x02);
-    tftstWriteData(0x84);
-    tftstWriteCommand(0xC1);
-    tftstWriteData(0xC5);
-    tftstWriteCommand(0xC2);
-    tftstWriteData(0x0A);
-    tftstWriteData(0x00);
-    tftstWriteCommand(0xC3);
-    tftstWriteData(0x8A);
-    tftstWriteData(0x2A);
-    tftstWriteCommand(0xC4);
-    tftstWriteData(0x8A);
-    tftstWriteData(0xEE);
-    tftstWriteCommand(0xC5);
-    tftstWriteData(0x0E);
-    tftstWriteCommand(0x20);
-    tftstWriteCommand(0x36);
-    tftstWriteData(0b01100000);
-
-    tftstWriteCommand(0x3A);
-    tftstWriteData(0x05);
-
-    tftstWriteCommand(0x2A);
-    tftstWriteData(0x00);
-    tftstWriteData(0x00);
-    tftstWriteData(0x00);
-    tftstWriteData(0x7F);
-    tftstWriteCommand(0x2B);
-    tftstWriteData(0x00);
-    tftstWriteData(0x00);
-    tftstWriteData(0x00);
-    tftstWriteData(0x9F);
-
-    tftstWriteCommand(0xE0);
-    tftstWriteData(0x02);
-    tftstWriteData(0x1C);
-    tftstWriteData(0x07);
-    tftstWriteData(0x12);
-    tftstWriteData(0x37);
-    tftstWriteData(0x32);
-    tftstWriteData(0x29);
-    tftstWriteData(0x2D);
-    tftstWriteData(0x29);
-    tftstWriteData(0x25);
-    tftstWriteData(0x2B);
-    tftstWriteData(0x39);
-    tftstWriteData(0x00);
-    tftstWriteData(0x01);
-    tftstWriteData(0x03);
-    tftstWriteData(0x10);
-    tftstWriteCommand(0xE1);
-    tftstWriteData(0x03);
-    tftstWriteData(0x1D);
-    tftstWriteData(0x07);
-    tftstWriteData(0x06);
-    tftstWriteData(0x2E);
-    tftstWriteData(0x2C);
-    tftstWriteData(0x29);
-    tftstWriteData(0x2D);
-    tftstWriteData(0x2E);
-    tftstWriteData(0x2E);
-    tftstWriteData(0x37);
-    tftstWriteData(0x3F);
-    tftstWriteData(0x00);
-    tftstWriteData(0x00);
-    tftstWriteData(0x02);
-    tftstWriteData(0x10);
-    tftstWriteCommand(0x13);
-    _delay((unsigned long)((10)*(32000000/4000.0)));
-    tftstWriteCommand(0x29);
-    _delay((unsigned long)((10)*(32000000/4000.0)));
-    do { LATDbits.LATD7 = 1; } while(0);
-}
-# 46 "main.c" 2
-# 1 "./tftst_colors.h" 1
-# 47 "main.c" 2
-# 1 "./tftst_custom_fonts.h" 1
-# 11 "./tftst_custom_fonts.h"
-# 1 "./tftst_custom_font_types.h" 1
-# 16 "./tftst_custom_font_types.h"
-typedef struct TFTSTCustomFontCharData {
-    int8_t left;
-    int8_t top;
-    uint8_t width;
-    uint16_t size;
-    uint8_t *compressedData;
-} TFTSTCustomFontCharData;
-
-typedef struct TFTSTCustomFontData {
-    uint8_t size;
-    TFTSTCustomFontCharData *charData;
-} TFTSTCustomFontData;
-# 12 "./tftst_custom_fonts.h" 2
-
-uint16_t __fgColor = 0;
-uint16_t __bgColor = 0;
-uint16_t __blend[16];
-
-void tfstPrepareBlend(uint16_t color1, uint16_t color2) {
-    if (__fgColor == color1 && __bgColor == color2) {
-        return;
-    }
-    uint8_t color1Red = color1 >> 11;
-    uint8_t color1Green = (color1 >> 5) & 0b00111111;
-    uint8_t color1Blue = color1 & 0b00011111;
-
-    uint8_t color2Red = color2 >> 11;
-    uint8_t color2Green = (color2 >> 5) & 0b00111111;
-    uint8_t color2Blue = color2 & 0b00011111;
-
-    for (uint8_t i = 0; i < 16; i++) {
-        float alpha = i / 15.0f;
-        float iAlpha = 1 - alpha;
-        uint8_t blendRed = (color1Red * alpha) + (color2Red * iAlpha);
-        uint8_t blendGreen = (color1Green * alpha) + (color2Green * iAlpha);
-        uint8_t blendBlue = (color1Blue * alpha) + (color2Blue * iAlpha);
-        __blend[i] = (blendRed << 11) + (blendGreen << 5) + blendBlue;
-    }
-    __fgColor = color1;
-    __bgColor = color2;
-}
-
-void tftstDrawCharWithFont(TFTSTCustomFontData *font, uint8_t x, uint8_t y, uint8_t c, uint16_t color, uint16_t bg) {
-    tfstPrepareBlend(color, bg);
-    TFTSTCustomFontCharData charData = font->charData[c - 32];
-    if (charData.left >= 0){
-        tftstSetWindow(x + charData.left, x + charData.left + charData.width - 1, y + charData.top, TFTST_HEIGHT);
-    } else {
-        tftstSetWindow(x + charData.left, x + charData.left + charData.left + charData.width - 1, y + charData.top, TFTST_HEIGHT);
-    }
-
-    for (int16_t i = 0; i < charData.size; i++) {
-        uint8_t count = charData.compressedData[i] >> 4;
-        uint8_t alpha = charData.compressedData[i] & 15;
-        for (uint8_t j = 0; j < count; j++) {
-            tftstWriteColor(__blend[alpha]);
-        }
-    }
-}
-
-void tftstDrawTextWithFont(TFTSTCustomFontData *font, uint8_t x, uint8_t y, char *_text, uint16_t color, uint16_t bg) {
-    uint8_t cursor_x, cursor_y;
-    uint16_t textsize, i;
-    cursor_x = x, cursor_y = y;
-    textsize = strlen(_text);
-    for (i = 0; i < textsize; i++) {
-        TFTSTCustomFontCharData charData = font->charData[_text[i] - 32];
-        uint8_t charWidth = charData.width + charData.left;
-        if (((cursor_x + charWidth) > TFTST_WIDTH)) {
-            cursor_x = 0;
-            cursor_y = cursor_y + font->size + 2;
-            if (cursor_y > TFTST_HEIGHT) cursor_y = TFTST_HEIGHT;
-            if (_text[i] == 0x20) goto _skip;
-        }
-        tftstDrawCharWithFont(font, cursor_x, cursor_y, _text[i], color, bg);
-
-        cursor_x = cursor_x + charWidth;
-        if (cursor_x > TFTST_WIDTH) cursor_x = TFTST_WIDTH;
-_skip:
-        ;
-    }
-}
-# 48 "main.c" 2
-# 1 "./tftst_custom_font_data.h" 1
-# 18 "./tftst_custom_font_data.h"
- const uint8_t __lettertypeMiesChristmasIconsRegular_40_50[] = {80,17,21,24,27,28,79,28,27,22,18,128,20,27,63,44,56,26,30,47,30,20,96,25,31,29,25,20,128,18,26,47,22,64,25,31,23,208,21,30,31,21,32,18,31,25,96,22,20,32,19,45,17,16,24,31,30,18,16,25,31,18,16,25,31,25,16,24,47,24,17,29,47,27,17,30,47,27,16,28,31,21,28,63,24,31,29,31,30,27,31,24,26,95,28,16,28,63,26,29,63,35,63,32,25,63,28,19,16,19,47,24,16,24,31,27,17,32,24,31,28,48,17,29,31,64,26,31,27,23,29,31,21,48,17,47,64,27,31,64,24,95,20,64,28,31,64,47,18,48,17,27,40,22,20,17,64,27,31,64,47,20,224,31,28,48,20,47,17,208,23,31,22,48,25,31,22,208,19,31,29,64,30,31,17,192,17,28,31,19,48,22,31,24,208,27,31,23,48,17,29,31,17,192,26,31,26,64,26,31,22,192,24,31,28,64,26,31,26,192,22,31,29,17,48,26,31,29,17,176,22,47,17,48,26,31,29,19,176,20,47,19,32,17,26,31,29,17,80,17,19,64,17,29,31,22,32,19,28,31,30,20,19,39,26,27,63,22,48,28,31,26,48,29,143,29,28,29,31,27,32,19,31,29,17,48,28,31,30,28,40,20,19,64,27,31,32,20,31,22,80,20,160,21,31,32,20,31,25,240,16,17,31,32,20,47,23,51,176,20,26,31,32,17,191,75,30,79,48,21,248,56,23};
- const uint8_t __lettertypeMiesChristmasIconsRegular_40_48[] = {80,22,26,29,111,27,24,36,17,96,21,30,31,29,24,52,22,24,28,30,63,30,18,64,22,31,29,20,144,21,29,47,24,48,19,31,27,17,192,26,47,20,32,27,31,18,224,22,31,29,16,18,31,28,32,19,18,16,17,23,27,26,17,16,17,64,22,31,20,23,31,23,16,22,31,30,20,28,31,28,31,26,24,31,29,17,16,18,21,31,25,24,31,20,18,30,79,22,16,25,79,26,16,30,47,28,24,31,20,24,79,22,32,17,25,28,63,24,63,27,24,31,19,30,47,24,18,96,24,79,21,20,16,24,31,30,63,17,112,19,79,24,32,24,79,30,144,79,25,32,26,31,21,16,31,28,144,31,30,23,31,28,32,28,31,32,31,26,128,19,31,28,17,31,28,32,28,31,32,31,24,128,20,31,26,16,31,28,32,28,31,32,31,24,128,23,31,24,20,31,28,32,28,31,32,31,26,128,24,31,36,31,25,32,28,31,18,16,30,28,128,28,31,16,22,31,23,32,25,31,20,16,28,29,112,17,31,28,16,24,31,20,32,21,31,23,16,25,31,19,96,22,31,23,16,28,31,17,48,31,27,16,19,31,25,96,30,31,17,16,31,30,64,29,31,32,28,30,19,64,22,31,26,16,21,31,25,64,23,31,21,16,20,31,28,17,32,17,30,31,18,16,27,31,18,64,17,31,27,32,27,31,25,19,23,30,31,22,16,18,31,28,96,24,31,20,16,17,29,63,30,19,32,29,31,18,96,17,30,28,17,16,17,23,24,21,48,26,31,23,128,22,31,28,17,96,22,31,29,160,24,31,30,21,48,18,25,31,29,17,176,20,30,47,27,63,29,17,208,17,22,27,44,27,23,17,128};
- const uint8_t __lettertypeMiesChristmasIconsRegular_40_51[] = {96,20,39,22,19,17,160,18,25,30,95,30,25,19,112,23,47,27,21,20,18,20,25,63,29,21,17,48,25,31,26,18,96,17,22,30,47,28,17,16,17,31,27,16,17,22,21,32,25,24,17,32,22,30,31,26,16,22,31,18,17,28,31,29,16,23,47,23,16,19,18,17,29,31,20,27,28,16,28,31,29,31,24,30,47,28,17,31,29,16,18,31,24,28,30,24,31,26,17,28,47,30,47,29,47,21,16,31,26,25,63,18,32,49,30,47,26,31,28,22,31,23,17,47,22,96,29,31,22,16,28,47,30,17,16,17,18,96,17,47,18,16,22,31,30,19,144,17,28,31,27,32,23,31,23,144,18,28,31,29,17,16,17,28,30,17,144,30,31,26,17,16,20,28,31,21,144,20,31,29,32,20,47,24,160,18,31,30,17,16,17,28,47,24,17,144,25,31,29,22,17,16,18,27,31,28,160,25,47,30,23,32,26,31,25,160,17,23,30,31,25,32,27,31,18,176,17,47,18,16,18,31,24,32,20,19,128,22,31,20,32,31,28,16,27,47,27,20,96,21,31,20,32,31,28,24,31,23,24,47,28,25,23,21,22,23,46,32,18,31,25,28,31,32,17,23,28,95,26,18,32,25,31,19,24,31,23,80,17,36,64,19,31,28,16,17,47,23,18,128,18,23,47,18,32,20,30,47,29,27,71,26,28,47,29,19,80,23,30,143,30,22,64};
- const uint8_t __lettertypeMiesChristmasIconsRegular_40_104[] = {240,19,25,23,17,80,19,25,29,26,22,96,17,27,63,21,80,30,79,28,17,48,17,28,31,23,21,31,24,64,20,31,29,34,26,31,30,19,16,17,28,31,19,17,28,31,18,80,27,47,25,35,31,30,22,27,31,19,20,29,31,22,112,22,30,127,27,24,47,22,160,20,26,127,29,19,96,18,20,87,27,111,40,43,63,30,26,223,30,92,47,28,31,26,24,21,68,24,31,26,20,31,24,80,21,31,28,29,128,28,27,16,31,24,96,31,44,128,24,28,16,31,24,80,20,31,28,31,26,119,29,31,24,31,28,51,39,29,31,28,255,111,20,24,21,30,31,23,36,19,24,31,27,24,47,56,30,31,22,20,48,44,64,20,31,21,18,31,25,48,44,80,44,64,17,31,20,16,31,24,48,24,28,80,44,80,31,22,16,31,24,48,24,28,80,44,80,31,24,16,31,24,48,24,28,80,44,80,31,24,16,31,24,48,24,28,80,44,80,31,24,16,31,24,48,24,31,80,44,80,31,24,16,31,24,48,24,31,80,44,80,31,24,16,31,24,48,24,31,80,44,80,31,24,16,31,24,48,24,31,80,31,28,80,28,27,16,31,27,48,27,31,80,31,30,87,29,30,24,47,29,79,64,20,159,30,92,27,24,64,17,47,25,36,224};
- const uint8_t __lettertypeMiesChristmasIconsRegular_40_66[] = {160,23,29,111,27,20,192,17,28,63,24,20,25,79,26,17,144,19,29,31,43,31,20,19,26,31,25,19,27,31,28,17,112,17,30,31,30,17,26,95,26,32,30,31,26,112,23,47,30,29,47,26,21,23,30,31,27,26,63,19,96,29,31,28,63,19,48,17,63,26,21,31,26,80,17,31,28,16,47,22,80,24,31,29,32,28,30,80,20,47,29,47,20,80,20,31,28,32,28,31,96,47,29,47,28,80,21,31,30,22,24,47,96,46,19,25,47,80,25,111,96,22,31,46,31,27,80,29,31,26,20,24,31,30,112,28,47,28,19,64,24,47,32,22,31,26,240,20,47,25,16,17,29,31,18,224,19,30,63,28,47,25,224,21,30,31,23,17,30,47,29,17,208,21,47,22,16,17,29,47,19,208,19,30,63,27,30,31,29,17,208,17,29,31,26,17,30,47,29,17,224,27,31,27,16,17,30,31,26,240,24,47,23,20,30,31,22,240,19,111,22,240,16,28,31,19,20,47,23,240,16,22,31,23,16,25,31,26,240,32,29,31,24,26,31,28,240,32,23,95,18,240,16,17,30,31,21,47,21,240,32,25,31,22,19,31,27,240,32,18,31,30,17,28,31,18,240,32,26,79,24,240,32,21,31,28,27,47,17,240,32,29,31,17,24,31,24,240,32,24,31,27,20,46,240,32,19,30,79,22,240,16,17,28,31,25,47,30,240,32,25,31,28,16,28,31,21,240,32,25,31,27,20,31,28,240,48,18,79,20,240,64,18,21,24,20,240,64};
- const uint8_t __lettertypeMiesChristmasIconsRegular_40_32[] = {240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,160};
- const TFTSTCustomFontCharData __lettertypeMiesChristmasIconsRegular_40CharData[] = {{0, 0, 10, 27, __lettertypeMiesChristmasIconsRegular_40_32},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 22, 387, __lettertypeMiesChristmasIconsRegular_40_48},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 19, 323, __lettertypeMiesChristmasIconsRegular_40_51},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 7, 24, 348, __lettertypeMiesChristmasIconsRegular_40_66},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 12, 22, 295, __lettertypeMiesChristmasIconsRegular_40_104},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},{2, 10, 23, 333, __lettertypeMiesChristmasIconsRegular_40_50},};
- const TFTSTCustomFontData tftstFont_lettertypeMiesChristmasIconsRegular_40 = {46, &__lettertypeMiesChristmasIconsRegular_40CharData};
-
-
- const uint8_t __cQMonoRegular_48_48[] = {80,17,19,23,25,27,24,22,19,160,20,29,127,27,18,96,17,24,175,30,22,80,27,223,23,48,21,239,30,18,16,17,30,79,30,21,32,17,23,95,27,16,23,79,30,17,80,19,95,19,26,79,19,112,23,79,22,28,63,30,128,18,79,24,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,32,17,23,27,21,48,79,28,79,28,32,26,63,22,32,79,28,79,28,32,79,27,32,79,28,79,28,32,27,63,23,32,79,28,79,28,32,17,27,31,25,48,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,29,63,29,128,18,79,25,26,79,18,112,22,79,22,24,79,27,96,17,30,79,20,18,95,27,18,48,20,29,79,29,32,23,111,29,27,30,111,19,48,28,223,24,64,17,28,191,25,112,23,143,30,20,144,18,24,26,29,31,28,25,23,17,80};
- const uint8_t __cQMonoRegular_48_49[] = {17,25,139,23,128,27,175,22,112,191,28,112,28,175,28,112,17,27,159,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,128,23,91,79,30,75,26,21,16,26,255,47,22,255,63,44,255,47,24,19,28,255,26,17};
- const uint8_t __cQMonoRegular_48_50[] = {64,20,21,23,59,26,22,19,128,18,27,159,27,20,80,24,223,22,48,24,255,23,32,28,255,30,18,16,26,79,23,18,48,19,25,95,27,16,17,27,31,27,18,112,19,95,19,208,23,79,22,208,18,79,24,224,79,28,208,18,79,25,208,23,79,22,192,18,30,79,19,176,21,30,79,29,112,20,21,24,27,127,19,80,19,29,175,24,80,24,191,24,80,25,175,30,20,80,20,143,28,24,21,17,80,17,30,95,22,18,160,23,79,30,17,192,25,79,20,208,28,63,30,224,79,28,160,18,19,18,16,79,28,144,22,47,30,19,79,28,144,29,63,27,79,28,144,79,28,79,28,144,79,28,79,30,155,79,28,255,63,28,255,63,44,255,47,24,19,28,255,26,17};
- const uint8_t __cQMonoRegular_48_51[] = {64,20,21,23,59,26,22,19,128,18,27,159,27,20,80,24,223,22,48,24,255,23,32,28,255,30,18,16,26,79,23,18,48,19,25,95,27,16,17,27,31,27,18,112,19,95,19,208,23,79,22,208,18,79,24,224,79,28,208,18,79,25,208,23,79,22,192,18,30,79,19,176,21,30,79,29,96,19,25,59,127,19,80,17,30,175,24,96,20,175,28,112,18,191,21,112,21,29,159,30,17,176,19,24,95,26,208,19,95,19,208,24,79,21,208,19,79,24,224,79,28,208,18,79,25,208,22,79,22,17,24,27,24,17,112,17,30,79,20,25,63,29,20,80,22,30,79,29,16,28,111,43,28,127,19,16,26,255,24,32,17,27,223,26,80,21,30,159,30,23,112,17,22,24,28,30,47,28,26,22,96};
- const uint8_t __cQMonoRegular_48_52[] = {17,25,27,22,160,17,25,27,23,16,27,63,22,144,26,63,23,79,27,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,79,30,155,79,28,255,63,28,255,63,44,255,47,28,18,27,255,31,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,79,28,224,27,63,24,224,18,28,31,26,17};
- const uint8_t __cQMonoRegular_48_53[] = {17,25,251,23,16,27,255,47,23,255,63,28,255,63,28,255,63,28,79,28,144,79,28,79,28,144,79,28,79,28,144,30,63,27,79,28,144,24,63,21,79,28,160,21,24,20,16,79,28,224,79,28,224,79,28,224,79,28,224,79,30,91,23,20,19,96,223,27,17,64,239,30,21,48,28,255,21,32,18,27,239,30,17,176,19,24,95,26,208,19,95,19,208,24,79,21,208,19,79,24,224,79,28,208,18,79,25,208,22,79,22,17,24,27,24,17,112,17,30,79,20,25,63,29,20,80,22,30,79,29,16,28,111,43,28,127,19,16,26,255,24,32,17,27,223,26,80,21,30,159,30,23,112,17,22,24,28,30,47,28,26,22,96};
- const uint8_t __cQMonoRegular_48_54[] = {96,20,23,59,26,23,20,19,128,22,29,159,24,17,64,17,25,207,30,21,48,27,255,20,16,21,255,31,24,17,30,95,23,18,48,19,25,79,22,23,79,30,17,112,20,29,31,25,16,26,79,19,208,28,63,30,224,79,28,224,79,28,224,79,28,224,79,28,19,25,29,47,29,26,23,18,80,223,30,22,64,255,26,17,32,255,31,25,32,143,28,27,29,111,20,16,111,27,17,48,19,29,79,29,16,95,27,96,17,30,79,20,95,17,112,21,79,23,79,29,128,17,79,25,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,29,63,29,128,18,79,25,26,79,18,112,22,79,22,24,79,27,96,17,30,79,20,18,95,27,18,48,20,29,79,29,32,23,111,29,27,30,111,19,48,28,223,24,64,17,28,191,25,112,23,143,30,20,144,18,24,26,29,31,28,25,23,17,80};
- const uint8_t __cQMonoRegular_48_55[] = {17,25,251,23,16,27,255,47,23,255,63,44,255,47,24,17,27,255,31,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,28,79,24,192,20,95,17,192,26,79,24,208,95,17,208,28,63,24,224,19,28,31,26,17,224};
- const uint8_t __cQMonoRegular_48_56[] = {80,17,19,23,25,27,24,22,19,160,20,29,127,27,18,96,17,24,175,30,22,80,27,223,23,48,21,239,30,18,16,17,30,79,30,21,32,17,23,95,27,16,23,79,30,17,80,19,95,19,26,79,19,112,23,79,22,28,63,30,128,18,79,24,79,28,144,79,28,29,63,29,128,18,79,25,26,79,19,112,23,79,22,23,79,28,96,18,30,79,19,18,95,28,19,48,21,30,79,29,32,23,111,30,27,127,19,48,28,223,24,64,18,30,191,28,80,25,223,21,48,20,239,30,17,16,17,30,95,22,18,16,19,24,95,26,16,23,79,30,17,80,19,95,19,25,79,20,112,24,79,21,28,63,30,128,19,79,24,79,28,144,79,28,29,63,29,128,18,79,25,26,79,18,112,22,79,22,24,79,27,96,17,30,79,20,18,95,27,18,48,20,29,79,29,32,23,111,29,27,30,111,19,48,28,223,24,64,17,28,191,25,112,23,143,30,20,144,18,24,26,29,31,28,25,23,17,80};
- const uint8_t __cQMonoRegular_48_57[] = {80,17,19,23,25,27,24,22,19,160,20,29,127,27,18,96,17,24,175,30,22,80,27,223,23,48,21,239,30,18,16,17,30,79,30,21,32,17,23,95,27,16,23,79,30,17,80,19,95,19,26,79,19,112,23,79,22,28,63,30,128,18,79,24,79,28,144,79,28,79,28,144,79,28,79,28,144,79,28,30,63,28,144,79,44,79,17,112,21,79,28,24,79,25,112,29,79,28,20,95,23,64,17,26,95,28,16,27,95,29,24,23,25,30,111,28,16,17,255,31,28,32,20,255,28,48,18,28,223,28,80,22,28,95,27,21,79,28,128,18,20,19,48,79,28,224,79,28,224,79,28,208,18,79,25,208,22,79,22,17,24,27,24,17,112,17,30,79,20,25,63,29,20,80,22,30,79,29,16,28,111,43,28,127,19,16,26,255,24,32,17,27,223,26,80,21,30,159,30,23,112,17,22,24,28,30,47,28,26,22,96};
- const uint8_t __cQMonoRegular_48_32[] = {240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,240,144};
- const TFTSTCustomFontCharData __cQMonoRegular_48CharData[] = {{0, 0, 23, 74, __cQMonoRegular_48_32},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 113, __cQMonoRegular_48_49},{0, 15, 19, 173, __cQMonoRegular_48_50},{0, 15, 19, 181, __cQMonoRegular_48_51},{0, 15, 19, 142, __cQMonoRegular_48_52},{0, 15, 19, 163, __cQMonoRegular_48_53},{0, 15, 19, 203, __cQMonoRegular_48_54},{0, 15, 19, 134, __cQMonoRegular_48_55},{0, 15, 19, 228, __cQMonoRegular_48_56},{0, 15, 19, 211, __cQMonoRegular_48_57},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},{0, 15, 19, 224, __cQMonoRegular_48_48},};
- const TFTSTCustomFontData tftstFont_cQMonoRegular_48 = {51, &__cQMonoRegular_48CharData};
-
-
- const uint8_t __robotoRegular_24_77[] = {63,18,144,19,111,24,144,26,111,29,128,17,30,95,30,31,21,112,22,31,29,79,24,31,27,112,29,31,23,79,17,47,18,80,19,47,21,79,16,26,31,24,80,26,31,26,20,79,36,31,29,64,17,30,31,18,20,79,20,16,30,31,21,48,22,31,28,16,20,79,20,16,23,31,27,48,29,31,22,16,20,79,20,16,17,47,18,16,19,47,32,20,79,20,32,26,31,24,16,26,31,25,32,20,79,20,32,20,31,29,17,30,31,18,32,20,79,20,48,29,31,26,31,28,48,20,79,20,48,22,63,22,48,20,79,20,48,17,63,64,20,79,20,64,26,31,24,64,20,47};
- const uint8_t __robotoRegular_24_101[] = {48,22,27,29,27,24,17,48,17,28,95,30,19,32,27,31,29,18,32,26,31,29,16,20,47,17,64,28,31,22,26,31,25,80,24,31,25,28,31,26,87,25,31,28,175,28,29,31,23,116,19,27,31,24,128,23,31,29,96,17,16,17,30,31,25,17,48,22,30,21,16,21,47,29,25,24,28,31,29,17,32,18,27,63,30,27,17,16};
- const uint8_t __robotoRegular_24_114[] = {27,25,17,25,28,26,31,44,47,28,63,24,20,19,47,19,48,31,28,64,31,28,64,31,28,64,31,28,64,31,28,64,31,28,64,31,28,64,31,28,64,31,28,64};
- const uint8_t __robotoRegular_24_121[] = {24,27,25,80,20,43,21,47,17,64,26,31,26,16,47,22,64,47,21,16,26,31,27,48,20,47,32,19,47,17,32,25,31,26,48,30,31,22,32,30,31,21,48,25,31,27,16,19,31,30,64,18,47,17,23,31,25,80,29,31,22,29,31,19,80,23,31,28,31,30,96,17,63,25,112,27,47,18,112,22,31,29,128,23,31,23,128,30,31,18,112,24,31,28,96,28,29,47,19,96,47,30,19,96};
- const uint8_t __robotoRegular_24_88[] = {29,31,27,112,28,31,30,17,20,47,23,80,21,47,20,32,25,31,30,17,48,17,30,31,27,48,17,30,31,26,48,25,47,17,64,20,47,21,16,20,47,22,96,27,31,29,17,29,31,28,112,17,47,29,47,18,128,22,63,24,160,63,17,144,24,63,25,128,19,47,27,47,20,112,29,31,29,16,28,31,29,96,23,47,19,16,18,47,24,64,18,30,31,24,48,24,47,19,48,28,31,30,17,64,29,31,28,32,22,47,20,80,19,47,23,16,30,31,27,112,25,31,30,18};
- const uint8_t __robotoRegular_24_45[] = {25,95,21,90};
- const uint8_t __robotoRegular_24_97[] = {32,18,24,27,29,27,25,18,32,22,30,47,30,63,20,18,30,31,23,32,17,26,31,29,21,28,26,64,17,47,128,29,31,48,22,23,25,43,30,31,16,21,29,63,44,47,19,30,31,23,17,48,28,31,24,31,26,80,28,31,28,31,24,64,17,29,31,24,31,29,17,32,17,26,47,17,47,30,43,79,16,19,28,63,28,19,27,31};
- const uint8_t __robotoRegular_24_115[] = {32,19,26,27,29,27,23,17,32,22,111,28,17,19,47,23,32,18,29,31,27,22,31,28,64,20,47,22,31,29,17,96,17,29,31,30,25,21,17,64,17,26,79,27,20,64,17,21,25,30,47,22,112,24,31,30,29,31,22,80,47,26,31,28,17,48,22,47,17,29,31,30,26,23,27,47,22,16,17,26,79,30,22,16};
- const uint8_t __robotoRegular_24_32[] = {240,240,240,240,240,240,240,240,240,144};
- const TFTSTCustomFontCharData __robotoRegular_24CharData[] = {{0, 0, 6, 10, __robotoRegular_24_32},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{0, 16, 6, 4, __robotoRegular_24_45},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{1, 7, 14, 124, __robotoRegular_24_88},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{1, 11, 10, 88, __robotoRegular_24_97},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{1, 11, 11, 88, __robotoRegular_24_101},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 11, 6, 44, __robotoRegular_24_114},{1, 11, 10, 84, __robotoRegular_24_115},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{0, 11, 11, 104, __robotoRegular_24_121},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},{2, 7, 17, 150, __robotoRegular_24_77},};
- const TFTSTCustomFontData tftstFont_robotoRegular_24 = {29, &__robotoRegular_24CharData};
-# 49 "main.c" 2
-
-uint8_t hours = 0, seconds = 0, minutes = 0;
-char timeString [8];
-
-void handleTimer1Interrupt() {
-    seconds++;
-    if (seconds == 59) {
-        seconds = 0;
-        minutes++;
-    }
-    if (minutes == 59) {
-        minutes = 0;
-        hours++;
-    }
-
-    sprintf(timeString, "%02d %02d %02d", hours, minutes, seconds);
-    tftstDrawTextWithFont(&tftstFont_cQMonoRegular_48, 0, 40, timeString, 0xFFFF, 0x0000);
-}
-
-void demoWithCustomFontsAndTimer() {
-
-    (INTCONbits.GIE = 1);
-
-    (INTCONbits.PEIE = 1);
-
-    TMR1_SetInterruptHandler(handleTimer1Interrupt);
-    TMR1_StartTimer();
-    uint16_t bgColor = 0x0000;
-    do { LATDbits.LATD7 = 1; } while(0);
-    SPI_Open(0);
-    tftstInit();
-    tftstFillScreen(bgColor);
-
-    tftstDrawTextWithFont(&tftstFont_lettertypeMiesChristmasIconsRegular_40, 5,0, "h2023B", 0x07E0, 0x0000);
-    tftstDrawTextWithFont(&tftstFont_robotoRegular_24, 16, 90, "Merry X-Mas", 0xF800, 0x0000);
-    while (1) {
-
-        __asm(" clrwdt");
-    }
-}
-
-void demoAnimated() {
-    uint16_t bgColor = 0x0000;
-    do { LATDbits.LATD7 = 1; } while(0);
-    SPI_Open(0);
-    tftstInit();
-    tftstFillScreen(bgColor);
-
-    uint8_t y = 0;
-    int8_t deltaY = 1;
-    while (1) {
-
-
-        tftstDrawHorizontalLine(6, y - 1, 160, bgColor);
-        tftstDrawText(6, y, "funStackLabs", 0x07E0, bgColor, 2);
-        tftstDrawHorizontalLine(6, y + 14, 160, bgColor);
-        y += deltaY;
-        if (y == 0 || y == 114) {
-            deltaY = -deltaY;
-            y += deltaY;
-        }
-        uint8_t id = tftstReadId();
-        char idString [8];
-        sprintf(idString, "ID:%d", id);
-
-        if (id != 124) {
-            tftstInit();
-            tftstFillScreen(bgColor);
-        }
-
-        __asm(" clrwdt");
-    }
-}
-
-void demoSimple() {
-    do { LATDbits.LATD7 = 1; } while(0);
-    SPI_Open(0);
-    tftstInit();
-    uint16_t color = rand();
-    while (1) {
-        tftstFillScreen(0x0000);
-        tftstDrawText(6, 57, "funStackLabs", color, 0x0000, 2);
-        tftstDrawRect(2, 50, 155, 32, 0x07E0);
-
-        __asm(" clrwdt");
-        for (int i = 0; i < 10; i++) {
-            _delay((unsigned long)((1000)*(32000000/4000.0)));
-            color = rand();
-        }
-    }
-}
-
-
-
-
-void main(void) {
-
-    SYSTEM_Initialize();
-
-
-    demoWithCustomFontsAndTimer();
 }

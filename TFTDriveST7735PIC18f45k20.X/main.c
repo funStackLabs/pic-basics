@@ -44,6 +44,48 @@
 #include "mcc_generated_files/mcc.h"
 #include "tftst.h"
 #include "tftst_colors.h"
+#include "tftst_custom_fonts.h"
+#include "tftst_custom_font_data.h"
+
+uint8_t hours = 0, seconds = 0, minutes = 0;
+char timeString [8];
+
+void handleTimer1Interrupt() {
+    seconds++;
+    if (seconds == 59) {
+        seconds = 0;
+        minutes++;
+    }
+    if (minutes == 59) {
+        minutes = 0;
+        hours++;
+    }
+
+    sprintf(timeString, "%02d %02d %02d", hours, minutes, seconds);
+    tftstDrawTextWithFont(&tftstFont_cQMonoRegular_48, 0, 40, timeString, TFTST_WHITE, TFTST_BLACK);
+}
+
+void demoWithCustomFontsAndTimer() {
+    // Enable the Global Interrupts
+    INTERRUPT_GlobalInterruptEnable();
+    // Enable the Peripheral Interrupts
+    INTERRUPT_PeripheralInterruptEnable();
+
+    TMR1_SetInterruptHandler(handleTimer1Interrupt);
+    TMR1_StartTimer();
+    uint16_t bgColor = TFTST_BLACK;
+    TFTST_LEDON();
+    SPI_Open(0);
+    tftstInit();
+    tftstFillScreen(bgColor);
+    
+    tftstDrawTextWithFont(&tftstFont_lettertypeMiesChristmasIconsRegular_40, 5,0, "h2023B", TFTST_GREEN, TFTST_BLACK);
+    tftstDrawTextWithFont(&tftstFont_robotoRegular_24, 16, 90, "Merry X-Mas", TFTST_RED, TFTST_BLACK);
+    while (1) {
+        // do nothing. interrupt driven
+        CLRWDT();
+    }
+}
 
 void demoAnimated() {
     uint16_t bgColor = TFTST_BLACK;
@@ -73,6 +115,7 @@ void demoAnimated() {
             tftstInit();
             tftstFillScreen(bgColor);
         }
+
         CLRWDT();
     }
 }
@@ -86,9 +129,9 @@ void demoSimple() {
         tftstFillScreen(TFTST_BLACK);
         tftstDrawText(6, 57, "funStackLabs", color, TFTST_BLACK, 2);
         tftstDrawRect(2, 50, 155, 32, TFTST_GREEN);
-        
+
         CLRWDT();
-        for (int i=0; i< 10; i++){
+        for (int i = 0; i < 10; i++) {
             __delay_ms(1000);
             color = rand();
         }
@@ -101,24 +144,9 @@ void demoSimple() {
 void main(void) {
     // Initialize the device
     SYSTEM_Initialize();
-
-    // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
-    // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
     //demoSimple();
-    demoAnimated();
+    //demoAnimated();
+    demoWithCustomFontsAndTimer();
 }
 /**
  End of File

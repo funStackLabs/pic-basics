@@ -18,6 +18,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14 /opt/microchip/xc8/v2.36/pic/include/c99/stdarg.h
 [v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
 [p i ___va_arg ]
+"23 /opt/microchip/xc8/v2.36/pic/include/c99/stdlib.h
+[; ;/opt/microchip/xc8/v2.36/pic/include/c99/stdlib.h: 23: int atoi (const char *);
+[v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
+"14 /opt/microchip/xc8/v2.36/pic/include/c99/ctype.h
+[; ;/opt/microchip/xc8/v2.36/pic/include/c99/ctype.h: 14: int isdigit(int);
+[v _isdigit `(i ~T0 @X0 0 ef1`i ]
 "55 /opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 55: static int flags, prec, width;
 [v _flags `i ~T0 @X0 1 s ]
@@ -276,9 +282,174 @@ Version 4.0 HI-TECH Software Intermediate Code
 "706
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 706:         prec = -1;
 [e = _prec -U -> 1 `i ]
+"710
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 710:         done = 0;
+[e = _done -> 0 `i ]
+"711
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 711:         while (!done) {
+[e $U 25  ]
+[e :U 26 ]
+{
+"712
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 712:             switch ((*fmt)[0]) {
+[e $U 29  ]
+{
+"713
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 713:                 case '-' :
+[e :U 30 ]
+"714
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 714:                     flags |= (1 << 0);
+[e =| _flags << -> 1 `i -> 0 `i ]
+"715
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 715:                     ++*fmt;
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"716
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 716:                     break;
+[e $U 28  ]
+"717
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 717:                 case '0' :
+[e :U 31 ]
+"718
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 718:                     flags |= (1 << 1);
+[e =| _flags << -> 1 `i -> 1 `i ]
+"719
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 719:                     ++*fmt;
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"720
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 720:                     break;
+[e $U 28  ]
+"721
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 721:                 case '+' :
+[e :U 32 ]
+"722
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 722:                     flags |= (1 << 2);
+[e =| _flags << -> 1 `i -> 2 `i ]
+"723
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 723:                     ++*fmt;
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"724
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 724:                     break;
+[e $U 28  ]
+"725
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 725:                 case ' ' :
+[e :U 33 ]
+"726
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 726:                     flags |= (1 << 3);
+[e =| _flags << -> 1 `i -> 3 `i ]
+"727
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 727:                     ++*fmt;
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"728
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 728:                     break;
+[e $U 28  ]
+"729
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 729:                 case '#' :
+[e :U 34 ]
+"730
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 730:                     flags |= (1 << 4);
+[e =| _flags << -> 1 `i -> 4 `i ]
+"731
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 731:                     ++*fmt;
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"732
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 732:                     break;
+[e $U 28  ]
+"733
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 733:                 default:
+[e :U 35 ]
+"734
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 734:                     done = 1;
+[e = _done -> 1 `i ]
+"735
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 735:                     break;
+[e $U 28  ]
+"736
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 736:             }
+}
+[e $U 28  ]
+[e :U 29 ]
+[e [\ -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `i , $ -> -> 45 `ui `i 30
+ , $ -> -> 48 `ui `i 31
+ , $ -> -> 43 `ui `i 32
+ , $ -> -> 32 `ui `i 33
+ , $ -> -> 35 `ui `i 34
+ 35 ]
+[e :U 28 ]
+"737
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 737:         }
+}
+[e :U 25 ]
+"711
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 711:         while (!done) {
+[e $ ! != _done -> 0 `i 26  ]
+[e :U 27 ]
+"738
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 738:         if (flags & (1 << 0)) {
+[e $ ! != & _flags << -> 1 `i -> 0 `i -> 0 `i 36  ]
+{
+"739
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 739:             flags &= ~(1 << 1);
+[e =& _flags ~ << -> 1 `i -> 1 `i ]
+"740
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 740:         }
+}
+[e :U 36 ]
+"745
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 745:         if ((*fmt)[0] == '*') {
+[e $ ! == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 42 `ui 37  ]
+{
+"746
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 746:             ++*fmt;
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"747
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 747:             width = (*(int *)__va_arg(*(int **)ap, (int)0));
+[e = _width *U -> ( ___va_arg , (. -> *U -> _ap `**i `*v -> 0 `i `*i ]
+"748
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 748:             if (width < 0) {
+[e $ ! < _width -> 0 `i 38  ]
+{
+"749
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 749:                 flags |= (1 << 0);
+[e =| _flags << -> 1 `i -> 0 `i ]
+"750
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 750:                 width = -width;
+[e = _width -U _width ]
+"751
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 751:             }
+}
+[e :U 38 ]
+"752
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 752:         } else {
+}
+[e $U 39  ]
+[e :U 37 ]
+{
+"753
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 753:             width = atoi(*fmt);
+[e = _width ( _atoi (1 -> *U _fmt `*Cuc ]
+"754
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 754:             while ((0 && isdigit((*fmt)[0]), ((unsigned)((*fmt)[0])-'0') < 10)) {
+[e $U 40  ]
+[e :U 41 ]
+{
+"755
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 755:                 ++*fmt;
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"756
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 756:             }
+}
+[e :U 40 ]
+"754
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 754:             while ((0 && isdigit((*fmt)[0]), ((unsigned)((*fmt)[0])-'0') < 10)) {
+[e $ != ; -> && != -> 0 `i -> 0 `i != ( _isdigit (1 -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `i -> 0 `i `i -> < - -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 41  ]
+[e :U 42 ]
+"757
+[; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 757:         }
+}
+[e :U 39 ]
 "847
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 847:         if ((*fmt[0] == 'd') || (*fmt[0] == 'i')) {
-[e $ ! || == -> *U *U + _fmt * -> -> 0 `i `x -> -> # *U _fmt `i `x `ui -> 100 `ui == -> *U *U + _fmt * -> -> 0 `i `x -> -> # *U _fmt `i `x `ui -> 105 `ui 25  ]
+[e $ ! || == -> *U *U + _fmt * -> -> 0 `i `x -> -> # *U _fmt `i `x `ui -> 100 `ui == -> *U *U + _fmt * -> -> 0 `i `x -> -> # *U _fmt `i `x `ui -> 105 `ui 43  ]
 {
 "849
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 849:             ++*fmt;
@@ -293,10 +464,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "853
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 853:         }
 }
-[e :U 25 ]
+[e :U 43 ]
 "1372
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1372:         if ((*fmt)[0] == '%') {
-[e $ ! == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 37 `ui 26  ]
+[e $ ! == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 37 `ui 44  ]
 {
 "1373
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1373:             ++*fmt;
@@ -311,7 +482,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1376
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1376:         }
 }
-[e :U 26 ]
+[e :U 44 ]
 "1379
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1379:         ++*fmt;
 [e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
@@ -363,8 +534,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _nout -> 0 `i ]
 "1397
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1397:     while (*cfmt) {
-[e $U 28  ]
-[e :U 29 ]
+[e $U 46  ]
+[e :U 47 ]
 {
 "1398
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1398:         nout += vfpfcnvrt(fp, &cfmt, ap);
@@ -372,16 +543,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1399
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1399:     }
 }
-[e :U 28 ]
+[e :U 46 ]
 "1397
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1397:     while (*cfmt) {
-[e $ != -> *U _cfmt `i -> 0 `i 29  ]
-[e :U 30 ]
+[e $ != -> *U _cfmt `i -> 0 `i 47  ]
+[e :U 48 ]
 "1400
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1400:     return nout;
 [e ) _nout ]
-[e $UE 27  ]
+[e $UE 45  ]
 "1404
 [; ;/opt/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c: 1404: }
-[e :UE 27 ]
+[e :UE 45 ]
 }
